@@ -7,13 +7,19 @@ export default () => (
 
     <ul className="nav-items">
       <li>
-        <Link>Portfolio</Link>
+        <Link
+          to="/"
+          activeClassName="active">Portfolio</Link>
       </li>
       <li>
-        <Link>About</Link>
+        <Link
+          to="/about"
+          activeClassName="active">About</Link>
       </li>
       <li>
-        <Link>Contact</Link>
+        <Link
+          to="/contact"
+          activeClassName="active">Contact</Link>
       </li>
     </ul>
   </div>
