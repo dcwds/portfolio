@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 export default () => (
   <div className="header">
-    <Link to="/">Dalton Woods</Link>
+    <Link to="/" className="logo">Dalton Woods</Link>
 
     <ul className="nav-items">
       <li>

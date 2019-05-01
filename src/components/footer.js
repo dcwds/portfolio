@@ -2,7 +2,7 @@ import React from "react"
 
 export default () => (
   <div className="footer">
-    <p>&copy; 2019</p>
+    <p className="copyright">&copy; 2019</p>
 
     <ul className="nav-items">
       <li className="dribbble">

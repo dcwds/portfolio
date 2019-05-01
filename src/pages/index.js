@@ -10,6 +10,6 @@ export default () => (
       description="A selection of my work."
     />
 
-    Welcome to Dalton's portfolio!
+    <p>Welcome to Dalton's portfolio!</p>
   </Layout>
 )
