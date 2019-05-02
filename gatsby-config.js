@@ -6,12 +6,12 @@ module.exports = {
     twitterUsername: "@daltonwoods"
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: `src/utils/typography`
+        pathToConfigModule: "src/utils/typography"
       }
     }
   ]
