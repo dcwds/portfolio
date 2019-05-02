@@ -1,0 +1,22 @@
+form {
+  input:not([type="submit"]),
+  textarea {
+    width: 100%;
+  }
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  margin-bottom: 1.75em;
+  padding: 0;
+
+  label {
+    margin-bottom: 0.5em;
+  }
+}
+
+input,
+textarea {
+  padding: 0.5em;
+}

@@ -1,7 +1,10 @@
 @import "./fonts";
+@import "./forms";
 
 @import "./components/header";
 @import "./components/footer";
+
+@import "./pages/contact";
 
 a { // =REFACTOR colors
   color: #1b1b1b;
