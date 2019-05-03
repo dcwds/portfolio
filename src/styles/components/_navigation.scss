@@ -1,0 +1,43 @@
+@import "./tap-target";
+
+%navigation {
+  --nav-display: block;
+}
+
+@media screen and (min-width: 600px) {
+  %navigation {
+    --nav-display: flex;
+  }
+}
+
+%navigation {
+  display: var(--nav-display);
+
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+
+  .nav-items {
+    margin-bottom: 0;
+  }
+
+  a {
+    @extend %tap-target;
+  }
+}
+
+.nav-items {
+  font-size: 0.95em;
+  list-style-type: none;
+  margin-left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  a,
+  li {
+    display: inline-block;
+  }
+}
