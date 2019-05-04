@@ -1,0 +1,15 @@
+.content {
+  --content-display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .content {
+    --content-display: grid;
+  }
+}
+
+.content {
+  display: var(--content-display);
+
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}

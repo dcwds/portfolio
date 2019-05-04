@@ -11,8 +11,17 @@ export default () => (
       description="Get in touch with me."
     />
 
-    <h1>Contact</h1>
+    <div className="content">
+      <section className="hero">
+        <h1>Let's talk!</h1>
+        <p>
+          You can also reach me at <a href="mailto:iam@dcwds.co">iam@dcwds.co</a>
+        </p>
+      </section>
 
-    <ContactForm />
+      <section className="body">
+        <ContactForm />
+      </section>
+    </div>
   </Layout>
 )

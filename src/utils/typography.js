@@ -1,7 +1,7 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: "20px",
+  baseFontSize: "21px",
   baseLineHeight: "1.75",
   scaleRatio: "2.75",
   headerFontFamily: ["CircularStd", "Helvetica", "sans-serif"],

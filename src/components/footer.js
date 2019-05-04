@@ -2,7 +2,13 @@ import React from "react"
 
 export default () => (
   <div className="footer">
-    <p className="copyright">&copy; 2019</p>
+    <p className="copyright">
+      &copy; 2019 Designed and coded from scratch using 
+      <a
+        href="https://gatsbyjs.org"
+        rel="noopener noreferrer"
+        target="_blank">Gatsby</a>
+    </p>
 
     <ul className="nav-items">
       <li className="dribbble">
