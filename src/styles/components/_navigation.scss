@@ -28,7 +28,17 @@
 }
 
 .nav-items {
-  font-size: 0.95em;
+  --font-size: 0.85em;
+}
+
+@media screen and (min-width: 600px) {
+  .nav-items {
+    --font-size: 0.95em;
+  }
+}
+
+.nav-items {
+  font-size: var(--font-size);
   list-style-type: none;
   margin-left: 0;
 
