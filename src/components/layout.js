@@ -6,7 +6,7 @@ import "normalize.css"
 import "../styles/base.scss"
 
 export default ({ children }) => (
-  <div className="main">
+  <div className="site">
     <Header />
 
     { children }

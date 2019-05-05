@@ -10,6 +10,8 @@ export default () => (
       description="A few remarks about me."
     />
 
-    <h1>About</h1>
+    <main className="content">
+      <h1>About</h1>
+    </main>
   </Layout>
 )

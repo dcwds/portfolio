@@ -11,7 +11,7 @@ export default () => (
       description="Get in touch with me."
     />
 
-    <div className="content">
+    <main className="content">
       <section className="hero">
         <h1>Let's talk!</h1>
         <p>
@@ -22,6 +22,6 @@ export default () => (
       <section className="body">
         <ContactForm />
       </section>
-    </div>
+    </main>
   </Layout>
 )

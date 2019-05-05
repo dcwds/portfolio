@@ -31,11 +31,11 @@ a { // =REFACTOR colors
   }
 }
 
-.main {
+.site {
   @extend %container;
 }
 
-.header,
-.footer {
+header,
+footer {
   padding: 2em 0;
 }
