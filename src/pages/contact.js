@@ -11,7 +11,7 @@ export default () => (
       description="Get in touch with me."
     />
 
-    <main className="content">
+    <main className="content page-contact">
       <section className="hero">
         <h1>Let's talk!</h1>
         <p>

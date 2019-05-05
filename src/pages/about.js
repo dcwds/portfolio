@@ -10,7 +10,7 @@ export default () => (
       description="A few remarks about me."
     />
 
-    <main className="content">
+    <main className="content page-about">
       <h1>About</h1>
     </main>
   </Layout>

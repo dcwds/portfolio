@@ -10,7 +10,7 @@ export default () => (
       description="Thank you for reaching out!"
     />
 
-    <main className="content">
+    <main className="content page-contact-success">
       <h1>Your message made it to my inbox.</h1>
       <p>Thanks for reaching out! I'll respond as soon as possible. :-)</p>
     </main>

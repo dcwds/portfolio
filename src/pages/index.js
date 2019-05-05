@@ -10,8 +10,10 @@ export default () => (
       description="A selection of my work."
     />
 
-    <main className="content">
-      <p>Welcome to Dalton's portfolio!</p>
+    <main className="content page-home">
+      <section class="hero">
+        <h1>Hello, I am a product designer &amp; front-end developer currently living in Virginia.</h1>
+      </section>
     </main>
   </Layout>
 )
