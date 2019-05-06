@@ -40,7 +40,8 @@
 .nav-items {
   font-size: var(--font-size);
   list-style-type: none;
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
 
   display: flex;
   flex-wrap: wrap;

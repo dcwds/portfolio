@@ -1,0 +1,22 @@
+:root {
+  --font-primary: "CircularStd", Helvetica, Arial, sans-serif;
+  --font-secondary: "Portrait", Georgia, "Times New Roman", serif;
+
+  --type-scale-tiny: 0.964em;
+  --type-scale-small: 0.833em;
+  --type-scale-base: 1em;
+  --type-scale-medium: 1.2em;
+  --type-scale-big: 1.44em;
+  --type-scale-bigger: 1.728em;
+  --type-scale-giant: 2.074em;
+  --type-scale-goliath: 2.488em;
+}
+
+body {
+  --font-size: 140%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size);
+}

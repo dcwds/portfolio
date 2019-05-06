@@ -1,11 +1,13 @@
 @import "./fonts";
 @import "./forms";
 @import "./container";
+@import "./typography";
 
 @import "./components/content";
 @import "./components/header";
 @import "./components/footer";
 
+@import "./pages/index";
 @import "./pages/contact";
 
 *,

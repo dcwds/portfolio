@@ -11,8 +11,13 @@ export default () => (
     />
 
     <main className="content page-home">
-      <section class="hero">
-        <h1>Hello, I am a product designer &amp; front-end developer currently living in Virginia.</h1>
+      <section className="hero">
+        <p>My name is Dalton. I'm a product designer &amp; front-end developer based in Virginia.</p>
+        <p>I've helped companies keep a happy audience with easy to use products.</p>
+
+        <a
+          href="mailto:hello@dcwds.co"
+          rel="noopener noreferrer">hello@dcwds.co</a>
       </section>
     </main>
   </Layout>

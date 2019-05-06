@@ -62,3 +62,12 @@
   font-weight: 400;
   font-style: italic;
 }
+
+@font-face {
+  font-family: 'Portrait';
+  src: url('../fonts/Portrait-Bold.woff2') format('woff2'),
+      url('../fonts/Portrait-Bold.woff') format('woff'),
+      url('../fonts/Portrait-Bold.svg#Portrait-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
