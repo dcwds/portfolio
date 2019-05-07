@@ -28,17 +28,6 @@
 }
 
 .nav-items {
-  --font-size: 0.85em;
-}
-
-@media screen and (min-width: 600px) {
-  .nav-items {
-    --font-size: 0.95em;
-  }
-}
-
-.nav-items {
-  font-size: var(--font-size);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -50,6 +39,10 @@
   a,
   li {
     display: inline-block;
+  }
+
+  a {
+    font-weight: 600;
   }
 
   li {

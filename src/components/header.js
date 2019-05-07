@@ -9,8 +9,8 @@ export default () => (
       <ul className="nav-items">
         <li>
           <Link
-            to="/"
-            activeClassName="active">Portfolio</Link>
+            to="/work"
+            activeClassName="active">Work</Link>
         </li>
         <li>
           <Link

@@ -1,5 +1,9 @@
 @import "../typography";
 
+.page-home .hero {
+  --padding: 10vh 0;
+}
+
 .page-home .hero p {
   --font-size: 9vw;
 }
@@ -15,4 +19,23 @@
   font-size: var(--font-size);
 
   line-height: 1.25;
+}
+
+.page-home .hero {
+  max-width: 680px;
+  padding: var(--padding);
+
+  p:last-of-type {
+    margin-bottom: 2em;
+  }
+}
+
+.page-home .call-to-action {
+  color: var(--color-primary);
+  font-size: var(--type-scale-giant);
+  font-weight: 700;
+
+  &:hover {
+    color: var(--color-text-primary);
+  }
 }

@@ -16,6 +16,7 @@ export default () => (
         <p>I've helped companies keep a happy audience with easy to use products.</p>
 
         <a
+          className="call-to-action"
           href="mailto:hello@dcwds.co"
           rel="noopener noreferrer">hello@dcwds.co</a>
       </section>
