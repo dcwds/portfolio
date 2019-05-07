@@ -1,8 +1,4 @@
-@import "./navigation";
-
 footer {
-  @extend %navigation;
-
   p {
     margin-bottom: 0;
   }

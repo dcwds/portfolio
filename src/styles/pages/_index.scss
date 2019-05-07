@@ -4,11 +4,19 @@
   --padding: 10vh 0;
 }
 
+.page-home .hero .call-to-action {
+  --font-size: 8vw;
+}
+
 .page-home .hero p {
   --font-size: 9vw;
 }
 
 @media screen and (min-width: 600px) {
+  .page-home .hero .call-to-action {
+    --font-size: var(--type-scale-giant);
+  }
+
   .page-home .hero p {
     --font-size: var(--type-scale-goliath);
   }
@@ -32,7 +40,7 @@
 
 .page-home .call-to-action {
   color: var(--color-primary);
-  font-size: var(--type-scale-giant);
+  font-size: var(--font-size);
   font-weight: 700;
 
   &:hover {

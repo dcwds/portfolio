@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 export default () => (
   <>
     <header className="navigation">
-      <Link to="/" className="logo">Dalton Woods</Link>
-
       <ul className="nav-items">
         <li>
           <Link

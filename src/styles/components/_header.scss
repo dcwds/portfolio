@@ -1,5 +1,31 @@
-@import "./navigation";
+header .nav-items {
+  --text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  header .nav-items {
+    --text-align: left;
+  }
+}
 
 header {
-  @extend %navigation;
+  .nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 25em;
+    text-align: var(--text-align);
+
+    a {
+      @extend %tap-target;
+
+      display: block;
+      font-weight: 600;
+    }
+
+    li {
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+  }
 }
