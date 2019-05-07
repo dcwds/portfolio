@@ -10,7 +10,7 @@ export default () => (
       description="A collection of past work."
     />
 
-    <section class="hero">
+    <section className="hero">
       <h1>Work</h1>
     </section>
   </Layout>
