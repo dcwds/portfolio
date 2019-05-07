@@ -50,10 +50,29 @@ body {
   @extend %container;
 }
 
+// =REFACTOR
 header {
-  margin-top: 10vh;
+  --header-margin: 5vh 0 0 0;
 }
 
 footer {
-  margin-bottom: 10vh;
+  --footer-margin: 0 0 5vh 0;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    --header-margin: 10vh 0 0 0;
+  }
+
+  footer {
+    --footer-margin: 0 0 10vh 0;
+  }
+}
+
+header {
+  margin: var(--header-margin);
+}
+
+footer {
+  margin: var(--footer-margin);
 }

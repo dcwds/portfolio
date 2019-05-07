@@ -1,5 +1,5 @@
 .page-home .hero {
-  --hero-padding: 10vh 0;
+  --hero-padding: 5vh 0;
 }
 
 .page-home .hero .call-to-action {
@@ -11,6 +11,10 @@
 }
 
 @media screen and (min-width: 600px) {
+  .page-home .hero {
+    --hero-padding: 10vh 0;
+  }
+  
   .page-home .hero .call-to-action {
     --call-to-action-font-size: var(--type-scale-giant);
   }
