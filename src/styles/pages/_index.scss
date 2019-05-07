@@ -1,37 +1,35 @@
-@import "../typography";
-
 .page-home .hero {
-  --padding: 10vh 0;
+  --hero-padding: 10vh 0;
 }
 
 .page-home .hero .call-to-action {
-  --font-size: 8vw;
+  --call-to-action-font-size: 8vw;
 }
 
 .page-home .hero p {
-  --font-size: 9vw;
+  --hero-font-size: 9vw;
 }
 
 @media screen and (min-width: 600px) {
   .page-home .hero .call-to-action {
-    --font-size: var(--type-scale-giant);
+    --call-to-action-font-size: var(--type-scale-giant);
   }
 
   .page-home .hero p {
-    --font-size: var(--type-scale-goliath);
+    --hero-font-size: var(--type-scale-goliath);
   }
 }
 
 .page-home .hero p {
   font-family: var(--font-secondary);
-  font-size: var(--font-size);
+  font-size: var(--hero-font-size);
 
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .page-home .hero {
-  max-width: 680px;
-  padding: var(--padding);
+  max-width: 32em;
+  padding: var(--hero-padding);
 
   p:last-of-type {
     margin-bottom: 2em;
@@ -40,7 +38,7 @@
 
 .page-home .call-to-action {
   color: var(--color-primary);
-  font-size: var(--font-size);
+  font-size: var(--call-to-action-font-size);
   font-weight: 700;
 
   &:hover {

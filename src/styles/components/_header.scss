@@ -1,20 +1,21 @@
-header .nav-items {
+header {
   --text-align: center;
 }
 
 @media screen and (min-width: 600px) {
-  header .nav-items {
+  header {
     --text-align: left;
   }
 }
 
 header {
+  text-align: var(--text-align);
+
   .nav-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 25em;
-    text-align: var(--text-align);
 
     a {
       @extend %tap-target;

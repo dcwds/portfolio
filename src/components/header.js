@@ -1,9 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Logo from "./logo"
+
 export default () => (
   <>
     <header className="navigation">
+      <Logo />
+      
       <ul className="nav-items">
         <li>
           <Link

@@ -1,0 +1,12 @@
+.logo {
+  --logo-size: 60px;
+}
+
+.logo {
+  background-color: var(--color-primary);
+  display: inline-block;
+  margin-bottom: 2em;
+
+  height: var(--logo-size);
+  width: var(--logo-size);
+}
