@@ -6,8 +6,8 @@ import SEO from "../components/seo"
 export default () => (
   <Layout>
     <SEO
-      title="Portfolio"
-      description="A selection of my work."
+      title="Dalton Woods"
+      description="Product designer &amp; front-end developer."
     />
 
     <main className="content page-home">
