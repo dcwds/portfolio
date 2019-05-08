@@ -1,5 +1,5 @@
 :root {
-  --font-primary: "CircularStd", Helvetica, Arial, sans-serif;
+  --font-primary: "Circular", Helvetica, Arial, sans-serif;
   --font-secondary: "Portrait", Georgia, "Times New Roman", serif;
 
   --type-scale-tiny: 0.964em;
@@ -14,6 +14,8 @@
 
 body {
   --font-size: 140%;
+
+  font-feature-settings: "calt", "liga", "clig", "kern";
 }
 
 body {
