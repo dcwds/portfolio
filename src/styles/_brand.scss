@@ -1,4 +1,23 @@
 :root {
-  --color-primary: #3f49e8;
-  --color-text-primary: #1e1e1e;
+  /* @color-primary *****/
+  --color-primary-hue: 236;
+  --color-primary-saturation: 79%;
+  --color-primary-lightness: 58%;
+
+  --color-primary: hsl(
+                     var(--color-primary-hue),
+                     var(--color-primary-saturation),
+                     var(--color-primary-lightness)
+                   );
+
+  /* @color-text-primary *****/
+  --color-text-primary-hue: 0;
+  --color-text-primary-saturation: 0%;
+  --color-text-primary-lightness: 18%;
+
+  --color-text-primary: hsl(
+                          var(--color-text-primary-hue),
+                          var(--color-text-primary-saturation),
+                          var(--color-text-primary-lightness)
+                        );
 }
