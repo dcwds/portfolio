@@ -2,13 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
+import { SEOIndexPage } from "../seo-config"
 
-export default () => (
+const IndexPage = () => (
   <Layout>
-    <SEO
-      title="Home"
-      description="Product designer &amp; front-end developer."
-    />
+    <SEO title={SEOIndexPage.title} description={SEOIndexPage.description} />
 
     <main className="content page-home">
       <section className="hero">
@@ -31,3 +29,5 @@ export default () => (
     </main>
   </Layout>
 )
+
+export default IndexPage

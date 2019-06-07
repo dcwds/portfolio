@@ -2,17 +2,9 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
 
-type Props = {
-  lang?: string
-  title: string
-  description: string
-} & typeof defaultProps
+import { ISEOItem } from "../seo-config"
 
-const defaultProps = {
-  lang: "en"
-}
-
-const SEO = (props: Props) => {
+const SEO = ({ title, description, lang = "en" }: ISEOItem) => {
   const data = useStaticQuery(graphql`
     query SEO {
       site {
@@ -27,14 +19,14 @@ const SEO = (props: Props) => {
   `)
 
   const seo = {
-    description: props.description || data.defaultDescription,
-    title: props.title || data.defaultTitle
+    description: description || data.defaultDescription,
+    title: title || data.defaultTitle
   }
 
   return (
     <Helmet
       htmlAttributes={{
-        lang: props.lang
+        lang
       }}
       title={seo.title}
       titleTemplate={data.titleTemplate}
@@ -71,7 +63,5 @@ const SEO = (props: Props) => {
     />
   )
 }
-
-SEO.defaultProps = defaultProps
 
 export default SEO

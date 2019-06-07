@@ -2,10 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
+import { SEOWorkPage } from "../seo-config"
 
 const WorkPage = () => (
   <Layout>
-    <SEO title="Work" description="A collection of past work." />
+    <SEO title={SEOWorkPage.title} description={SEOWorkPage.description} />
 
     <main className="content page-work">
       <section className="hero">

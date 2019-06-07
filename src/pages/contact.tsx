@@ -1,12 +1,16 @@
 import React from "react"
+import ContactForm from "../components/contact-form"
 import Layout from "../components/layout"
 
-import ContactForm from "../components/contact-form"
 import SEO from "../components/seo"
+import { SEOContactPage } from "../seo-config"
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact" description="Get in touch with me." />
+    <SEO
+      title={SEOContactPage.title}
+      description={SEOContactPage.description}
+    />
 
     <main className="content page-contact">
       <section className="hero">

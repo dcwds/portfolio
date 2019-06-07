@@ -1,11 +1,15 @@
 import React from "react"
-
 import Layout from "../components/layout"
+
 import SEO from "../components/seo"
+import { SEOContactSuccessPage } from "../seo-config"
 
 const ContactSuccessPage = () => (
   <Layout>
-    <SEO title="Success" description="Thank you for reaching out!" />
+    <SEO
+      title={SEOContactSuccessPage.title}
+      description={SEOContactSuccessPage.description}
+    />
 
     <main className="content page-contact-success">
       <h1>Your message made it to my inbox.</h1>
