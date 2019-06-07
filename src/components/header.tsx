@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import React, { Fragment } from "react"
+import React from "react"
 
 const NavItems: Array<{
   name: string
@@ -24,11 +24,9 @@ const Header = () => {
   ))
 
   return (
-    <Fragment>
-      <header className="navigation">
-        <ul className="nav-items">{items}</ul>
-      </header>
-    </Fragment>
+    <header className="navigation">
+      <ul className="nav-items">{items}</ul>
+    </header>
   )
 }
 
