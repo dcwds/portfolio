@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 
 const ElsewhereItems: Array<{
   name: string
@@ -19,25 +19,23 @@ const Footer = () => {
   ))
 
   return (
-    <Fragment>
-      <footer className="navigation">
-        <section className="note">
-          <h3>Dalton Woods</h3>
+    <footer className="navigation">
+      <section className="note">
+        <h3>Dalton Woods</h3>
 
-          <p>Product designer &amp; front-end developer.</p>
-        </section>
+        <p>Product designer &amp; front-end developer.</p>
+      </section>
 
-        <section className="elsewhere-list">
-          <h3>Elsewhere.</h3>
+      <section className="elsewhere-list">
+        <h3>Elsewhere.</h3>
 
-          <ul className="nav-items">{elsewhereItems}</ul>
-        </section>
+        <ul className="nav-items">{elsewhereItems}</ul>
+      </section>
 
-        <section className="copyright">
-          <small>&copy; Copyright 2019</small>
-        </section>
-      </footer>
-    </Fragment>
+      <section className="copyright">
+        <small>&copy; Copyright 2019</small>
+      </section>
+    </footer>
   )
 }
 

@@ -1,10 +1,6 @@
 import { Link } from "gatsby"
-import React, { Fragment } from "react"
+import React from "react"
 
-const Logo = () => (
-  <Fragment>
-    <Link className="logo" to="/" />
-  </Fragment>
-)
+const Logo = () => <Link className="logo" to="/" />
 
 export default Logo
