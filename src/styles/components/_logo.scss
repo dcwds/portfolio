@@ -1,19 +1,16 @@
 .logo {
-  --logo-margin-bottom: 1em;
   --logo-size: 50px;
 }
 
 @media screen and (min-width: 600px) {
   .logo {
     --logo-size: 60px;
-    --logo-margin-bottom: 2em;
   }
 }
 
 .logo {
   background-color: var(--color-primary);
   display: inline-block;
-  margin-bottom: var(--logo-margin-bottom);
 
   height: var(--logo-size);
   width: var(--logo-size);
