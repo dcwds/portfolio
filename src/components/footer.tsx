@@ -1,16 +1,14 @@
-import React from "react"
+import React, { Fragment } from "react"
 
-export default () => (
-  <>
+const Footer = () => (
+  <Fragment>
     <footer className="navigation">
       <section className="note">
         <h3>Dalton Woods</h3>
 
-        <p>
-          Product designer &amp; front-end developer.
-        </p>
+        <p>Product designer &amp; front-end developer.</p>
       </section>
-      
+
       <section className="elsewhere-list">
         <h3>Elsewhere.</h3>
 
@@ -49,5 +47,7 @@ export default () => (
         <small>&copy; Copyright 2019</small>
       </section>
     </footer>
-  </>
+  </Fragment>
 )
+
+export default Footer

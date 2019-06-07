@@ -12,13 +12,21 @@ export default () => (
 
     <main className="content page-home">
       <section className="hero">
-        <p>My name is Dalton. I'm a product designer &amp; front-end developer based in Virginia.</p>
-        <p>I've helped companies keep a happy audience with easy-to-use products.</p>
+        <p>
+          My name is Dalton. I'm a product designer &amp; front-end developer
+          based in Virginia.
+        </p>
+        <p>
+          I've helped companies keep a happy audience with easy-to-use products.
+        </p>
 
         <a
           className="call-to-action"
           href="mailto:hello@dcwds.co"
-          rel="noopener noreferrer">hello@dcwds.co</a>
+          rel="noopener noreferrer"
+        >
+          hello@dcwds.co
+        </a>
       </section>
     </main>
   </Layout>

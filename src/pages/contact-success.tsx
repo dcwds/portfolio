@@ -3,12 +3,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export default () => (
+const ContactSuccessPage = () => (
   <Layout>
-    <SEO
-      title="Success"
-      description="Thank you for reaching out!"
-    />
+    <SEO title="Success" description="Thank you for reaching out!" />
 
     <main className="content page-contact-success">
       <h1>Your message made it to my inbox.</h1>
@@ -16,3 +13,5 @@ export default () => (
     </main>
   </Layout>
 )
+
+export default ContactSuccessPage

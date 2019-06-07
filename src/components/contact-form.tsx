@@ -1,6 +1,6 @@
 import React from "react"
 
-export default () => (
+const ContactForm = () => (
   <form
     name="contact"
     method="post"
@@ -18,14 +18,21 @@ export default () => (
 
     <fieldset>
       <label htmlFor="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="tyrion.lannister@gmail.com" />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="tyrion.lannister@gmail.com"
+      />
     </fieldset>
 
     <fieldset>
       <label htmlFor="message">Message</label>
-      <textarea name="message" id="message" placeholder="Hello..." rows="6" />
+      <textarea name="message" id="message" placeholder="Hello..." rows={6} />
     </fieldset>
 
     <input type="submit" value="Send Message" />
   </form>
 )
+
+export default ContactForm

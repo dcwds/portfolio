@@ -1,21 +1,19 @@
 import React from "react"
 import Layout from "../components/layout"
 
-import SEO from "../components/seo"
 import ContactForm from "../components/contact-form"
+import SEO from "../components/seo"
 
-export default () => (
+const ContactPage = () => (
   <Layout>
-    <SEO
-      title="Contact"
-      description="Get in touch with me."
-    />
+    <SEO title="Contact" description="Get in touch with me." />
 
     <main className="content page-contact">
       <section className="hero">
         <h1>Let's talk!</h1>
         <p>
-          You can also reach me at <a href="mailto:iam@dcwds.co">iam@dcwds.co</a>
+          You can also reach me at
+          <a href="mailto:iam@dcwds.co">iam@dcwds.co</a>
         </p>
       </section>
 
@@ -25,3 +23,5 @@ export default () => (
     </main>
   </Layout>
 )
+
+export default ContactPage
