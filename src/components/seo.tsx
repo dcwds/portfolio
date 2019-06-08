@@ -10,7 +10,6 @@ const SEO = ({ title, description, lang = "en" }: ISEOItem) => {
       site {
         siteMetadata {
           defaultTitle: title
-          titleTemplate
           defaultDescription: description
           twitterUsername
         }
@@ -19,8 +18,8 @@ const SEO = ({ title, description, lang = "en" }: ISEOItem) => {
   `)
 
   const seo = {
-    description: description || data.defaultDescription,
-    title: title || data.defaultTitle
+    description: description || data.site.siteMetadata.defaultDescription,
+    title: title || data.site.siteMetadata.defaultTitle
   }
 
   return (
@@ -29,7 +28,7 @@ const SEO = ({ title, description, lang = "en" }: ISEOItem) => {
         lang
       }}
       title={seo.title}
-      titleTemplate={data.titleTemplate}
+      titleTemplate={`%s · ${data.site.siteMetadata.defaultTitle}`}
       meta={[
         {
           content: seo.description,
@@ -52,7 +51,7 @@ const SEO = ({ title, description, lang = "en" }: ISEOItem) => {
           property: "twitter:card"
         },
         {
-          content: data.twitterUsername,
+          content: data.site.siteMetadata.twitterUsername,
           property: "twitter:creator"
         },
         {
