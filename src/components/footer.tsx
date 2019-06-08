@@ -20,21 +20,8 @@ const Footer = () => {
 
   return (
     <footer className="navigation">
-      <section className="note">
-        <h3>Dalton Woods</h3>
-
-        <p>Product designer &amp; front-end developer.</p>
-      </section>
-
-      <section className="elsewhere-list">
-        <h3>Elsewhere.</h3>
-
-        <ul className="nav-items">{elsewhereItems}</ul>
-      </section>
-
-      <section className="copyright">
-        <small>&copy; Copyright 2019</small>
-      </section>
+      <p className="copyright">&copy; 2019 Dalton Woods.</p>
+      <ul className="nav-items">{elsewhereItems}</ul>
     </footer>
   )
 }

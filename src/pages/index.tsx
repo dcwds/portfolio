@@ -10,12 +10,10 @@ const IndexPage = () => (
 
     <main className="content page-home">
       <section className="hero">
+        <p>Hello! Hallo!</p>
+        <p>I'm Dalton.</p>
         <p>
-          My name is Dalton. I'm a product designer &amp; front-end developer
-          based in Virginia.
-        </p>
-        <p>
-          I've helped companies keep a happy audience with easy-to-use products.
+          I'm a product designer &amp; front-end developer based in Virginia.
         </p>
 
         <a

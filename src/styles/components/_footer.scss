@@ -1,13 +1,8 @@
-@import 'tap-target';
+@import "tap-target";
 
 footer {
   --footer-display: block;
   --footer-max-width: auto;
-}
-
-footer section {
-  --footer-section-margin-bottom: 2.2em;
-  --footer-section-padding: 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -15,38 +10,26 @@ footer section {
     --footer-display: flex;
     --footer-max-width: 40em;
   }
-
-  footer section {
-    --footer-section-padding: 0 1em;
-    --footer-section-margin-bottom: 0;
-  }
 }
 
 footer {
+  color: var(--color-primary-muted);
   display: var(--footer-display);
   justify-content: space-between;
   max-width: var(--footer-max-width);
 
-  section {
-    margin-bottom: var(--footer-section-margin-bottom);
-    padding: var(--footer-section-padding);
-
-    &:first-of-type {
-      padding-left: 0;
-    }
-  }
-
   .copyright {
-    margin-top: 1.2em;
+    margin: 0;
   }
 
   .nav-items {
     li {
-      margin-bottom: 0.75em;
-    }
-
-    a {
       display: inline-block;
+      margin-right: 2em;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 }

@@ -24,15 +24,11 @@ body {
   font-size: var(--font-size);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-secondary);
+h1 {
+  font-size: var(--type-scale-goliath);
 }
 
-h1 { font-size: var(--type-scale-goliath); }
-
-h3 { font-size: var(--type-scale-medium); }
+h3 {
+  font-size: var(--type-scale-medium);
+  font-weight: 600;
+}

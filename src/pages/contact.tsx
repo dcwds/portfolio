@@ -16,7 +16,7 @@ const ContactPage = () => (
       <section className="hero">
         <h1>Let's talk!</h1>
         <p>
-          You can also reach me at
+          You can also reach me at{" "}
           <a href="mailto:iam@dcwds.co">iam@dcwds.co</a>
         </p>
       </section>
