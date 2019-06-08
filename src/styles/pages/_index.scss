@@ -10,9 +10,12 @@
     margin: 0 0 0.3em 0;
   }
 
-  &.line-about,
   &.line-name {
     margin: 0 0 1.5em 0;
+  }
+
+  &.line-about {
+    margin-bottom: 3em;
   }
 }
 
@@ -31,6 +34,11 @@
   &:hover {
     color: white;
   }
+}
+
+.page-home p.availability {
+  color: var(--color-primary-muted);
+  font-size: var(--type-scale-tiny);
 }
 
 @media screen and (min-width: 600px) {

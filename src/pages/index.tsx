@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { SEOIndexPage } from "../seo-config"
 
+import Availability from "../components/availability"
 import Emoji from "../components/emoji"
 
 const IndexPage = () => (
@@ -27,6 +28,8 @@ const IndexPage = () => (
         >
           hello@dcwds.co
         </a>
+
+        <Availability available={true} />
       </section>
     </main>
   </Layout>
