@@ -4,13 +4,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { SEOIndexPage } from "../seo-config"
 
+import Emoji from "../components/emoji"
+
 const IndexPage = () => (
   <Layout>
     <SEO title={SEOIndexPage.title} description={SEOIndexPage.description} />
 
     <main className="content page-home">
       <section className="hero">
-        <p>Hello! Hallo!</p>
+        <p>
+          Hello! Hallo! <Emoji name="wave" />
+        </p>
         <p>I'm Dalton.</p>
         <p>
           I'm a product designer &amp; front-end developer based in Virginia.

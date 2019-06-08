@@ -31,6 +31,9 @@ const SEO = ({ title, description, lang = "en" }: ISEOItem) => {
       titleTemplate={`%s · ${data.site.siteMetadata.defaultTitle}`}
       meta={[
         {
+          charSet: "utf-8"
+        },
+        {
           content: seo.description,
           name: "description"
         },
