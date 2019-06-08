@@ -1,6 +1,6 @@
 .content {
   --content-display: block;
-  --content-margin: 8vh 0 10vh 0;
+  --content-margin: 10vh 0 10vh 0;
 
   display: var(--content-display);
   margin: var(--content-margin);
@@ -9,6 +9,6 @@
 @media screen and (min-width: 600px) {
   .content {
     --content-display: grid;
-    --content-margin: 10vh 0 15vh 0;
+    --content-margin: 15vh 0 15vh 0;
   }
 }
