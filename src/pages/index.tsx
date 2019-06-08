@@ -6,6 +6,7 @@ import { SEOIndexPage } from "../seo-config"
 
 import Availability from "../components/availability"
 import Emoji from "../components/emoji"
+import MailLink from "../components/mail-link"
 
 const IndexPage = () => (
   <Layout>
@@ -21,13 +22,7 @@ const IndexPage = () => (
           I'm a product designer &amp; front-end developer based in Virginia.
         </p>
 
-        <a
-          className="call-to-action"
-          href="mailto:hello@dcwds.co"
-          rel="noopener noreferrer"
-        >
-          hello@dcwds.co
-        </a>
+        <MailLink className="call-to-action" address="hello@dcwds.co" />
 
         <Availability available={true} />
       </section>

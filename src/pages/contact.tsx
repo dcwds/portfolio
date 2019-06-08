@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { SEOContactPage } from "../seo-config"
 
+import MailLink from "../components/mail-link"
+
 const ContactPage = () => (
   <Layout>
     <SEO
@@ -16,8 +18,7 @@ const ContactPage = () => (
       <section className="hero">
         <h1>Let's talk!</h1>
         <p>
-          You can also reach me at{" "}
-          <a href="mailto:iam@dcwds.co">iam@dcwds.co</a>
+          You can also reach me at <MailLink address="iam@dcwds.co" />
         </p>
       </section>
 
