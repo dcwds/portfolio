@@ -13,7 +13,7 @@ const IndexPage = () => (
     <main className="content page-home">
       <section className="hero">
         <p>
-          Hello! Hallo! <Emoji name="wave" />
+          Hello! Hallo! <Emoji label="wave" symbol="🖐️" />
         </p>
         <p>I'm Dalton.</p>
         <p>
