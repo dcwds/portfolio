@@ -2,13 +2,11 @@
 
 footer {
   --footer-display: block;
-  --footer-max-width: auto;
 }
 
 @media screen and (min-width: 600px) {
   footer {
     --footer-display: flex;
-    --footer-max-width: 40em;
   }
 }
 

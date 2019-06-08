@@ -20,14 +20,11 @@
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-tslint": "^0.0.2",
     "gatsby-plugin-typescript": "^2.0.15",
-    "gatsby-plugin-typography": "^2.2.13",
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0",
-    "react-typography": "^0.16.19",
-    "typography": "^0.16.19"
+    "react-helmet": "^5.2.0"
   },
   "devDependencies": {
     "@types/node-sass": "^4.11.0",
@@ -35,7 +32,6 @@
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.8",
-    "@types/typography": "^0.16.2",
     "prettier": "^1.17.0",
     "tslint": "^5.17.0",
     "tslint-config-prettier": "^1.18.0",

@@ -6,7 +6,7 @@ export interface ISEOItem {
 
 export const SEOIndexPage: ISEOItem = {
   description: "Dalton Woods, web designer & front-end developer.",
-  title: "Home"
+  title: "🖐️ Hello"
 }
 
 export const SEOAboutPage: ISEOItem = {
