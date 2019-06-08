@@ -2,15 +2,7 @@
 
 footer {
   --footer-display: block;
-}
 
-@media screen and (min-width: 600px) {
-  footer {
-    --footer-display: flex;
-  }
-}
-
-footer {
   color: var(--color-primary-muted);
   display: var(--footer-display);
   justify-content: space-between;
@@ -29,5 +21,11 @@ footer {
         margin-right: 0;
       }
     }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    --footer-display: flex;
   }
 }

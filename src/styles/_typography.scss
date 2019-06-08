@@ -16,11 +16,8 @@
 body {
   --font-size: 140%;
 
-  font-feature-settings: "calt", "liga", "clig", "kern";
-}
-
-body {
   font-family: var(--font-primary);
+  font-feature-settings: "calt", "liga", "clig", "kern";
   font-size: var(--font-size);
 }
 

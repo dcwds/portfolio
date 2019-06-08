@@ -1,17 +1,15 @@
 .logo {
   --logo-size: 50px;
+
+  background-color: var(--color-primary);
+  display: inline-block;
+
+  height: var(--logo-size);
+  width: var(--logo-size);
 }
 
 @media screen and (min-width: 600px) {
   .logo {
     --logo-size: 60px;
   }
-}
-
-.logo {
-  background-color: var(--color-primary);
-  display: inline-block;
-
-  height: var(--logo-size);
-  width: var(--logo-size);
 }

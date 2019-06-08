@@ -2,15 +2,7 @@
 
 header {
   --text-align: center;
-}
 
-@media screen and (min-width: 600px) {
-  header {
-    --text-align: left;
-  }
-}
-
-header {
   text-align: var(--text-align);
 
   .nav-items {
@@ -29,5 +21,11 @@ header {
       flex-grow: 1;
       margin-bottom: 0;
     }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    --text-align: left;
   }
 }

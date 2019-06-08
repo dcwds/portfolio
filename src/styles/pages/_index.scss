@@ -1,22 +1,6 @@
-.page-home .hero .call-to-action {
-  --call-to-action-font-size: 7vw;
-}
-
 .page-home .hero p {
   --hero-font-size: 8vw;
-}
 
-@media screen and (min-width: 600px) {
-  .page-home .hero .call-to-action {
-    --call-to-action-font-size: var(--type-scale-big);
-  }
-
-  .page-home .hero p {
-    --hero-font-size: var(--type-scale-bigger);
-  }
-}
-
-.page-home .hero p {
   font-size: var(--hero-font-size);
   font-weight: 500;
 
@@ -33,11 +17,23 @@
 }
 
 .page-home .call-to-action {
+  --call-to-action-font-size: 7vw;
+
   color: var(--color-primary);
   font-size: var(--call-to-action-font-size);
   font-weight: 600;
 
   &:hover {
     color: white;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .page-home .hero .call-to-action {
+    --call-to-action-font-size: var(--type-scale-big);
+  }
+
+  .page-home .hero p {
+    --hero-font-size: var(--type-scale-bigger);
   }
 }

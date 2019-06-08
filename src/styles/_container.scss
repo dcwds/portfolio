@@ -1,14 +1,12 @@
 %container {
   --max-width: 85vw;
+
+  margin: 0 auto;
+  max-width: var(--max-width);
 }
 
 @media screen and (min-width: 600px) {
   %container {
     --max-width: 55vw;
   }
-}
-
-%container {
-  margin: 0 auto;
-  max-width: var(--max-width);
 }

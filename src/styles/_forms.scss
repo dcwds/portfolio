@@ -1,3 +1,8 @@
+input,
+textarea {
+  padding: 0.5em;
+}
+
 form {
   input:not([type="submit"]),
   textarea {
@@ -14,9 +19,4 @@ fieldset {
   label {
     margin-bottom: 0.5em;
   }
-}
-
-input,
-textarea {
-  padding: 0.5em;
 }
