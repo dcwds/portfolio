@@ -13,7 +13,13 @@ const ContactForm = () => (
 
     <fieldset>
       <label htmlFor="name">Full Name</label>
-      <input type="text" name="name" id="name" placeholder="Tyrion Lannister" />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Tyrion Lannister"
+        spellCheck={false}
+      />
     </fieldset>
 
     <fieldset>
@@ -23,6 +29,7 @@ const ContactForm = () => (
         name="email"
         id="email"
         placeholder="tyrion.lannister@gmail.com"
+        spellCheck={false}
       />
     </fieldset>
 
