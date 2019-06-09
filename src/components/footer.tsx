@@ -20,7 +20,9 @@ const Footer = () => {
 
   return (
     <footer className="navigation">
-      <p className="copyright">&copy; 2019 Dalton Woods.</p>
+      <p className="copyright">
+        &copy; {new Date().getFullYear()} Dalton Woods.
+      </p>
       <ul className="nav-items">{elsewhereItems}</ul>
     </footer>
   )
