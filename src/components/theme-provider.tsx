@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import ThemeContext, { Theme, themes } from "../contexts/theme-context"
 
 type State = {
@@ -10,13 +10,20 @@ type Props = {
 }
 
 const ThemeProvider = ({ children }: Props) => {
-  const [theme, setTheme] = useState<State>({ theme: themes.dark })
+  const [theme, setTheme] = useState<State>({
+    theme: localStorage.getItem("theme") || themes.dark
+  })
 
   const toggleTheme = () => {
     setTheme(prevTheme => ({
+      ...prevTheme,
       theme: prevTheme.theme === themes.dark ? themes.light : themes.dark
     }))
   }
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme.theme)
+  }, [theme])
 
   return (
     <ThemeContext.Provider value={{ ...theme, toggleTheme }}>
