@@ -1,6 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
 
+import ThemeSelector from "./theme-selector"
+
 const NavItems: Array<{
   name: string
   route: string
@@ -26,6 +28,7 @@ const Header = () => {
   return (
     <header className="navigation">
       <ul className="nav-items">{items}</ul>
+      <ThemeSelector />
     </header>
   )
 }
