@@ -18,15 +18,8 @@
 
   /* @color-primary-muted *****/
   --color-primary-muted: hsl(var(--color-primary-hue), 20%, 60%);
+}
 
-  /* @color-text-primary *****/
-  --color-text-primary-hue: 0;
-  --color-text-primary-saturation: 0%;
-  --color-text-primary-lightness: 18%;
-
-  --color-text-primary: hsl(
-    var(--color-text-primary-hue),
-    var(--color-text-primary-saturation),
-    var(--color-text-primary-lightness)
-  );
+.theme-light {
+  --color-primary-bg: white;
 }

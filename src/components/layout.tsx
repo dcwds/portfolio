@@ -1,5 +1,7 @@
 import React, { ReactChild } from "react"
-import Content from "./content"
+import Footer from "./footer"
+import Header from "./header"
+import Logo from "./logo"
 
 import ThemeProvider from "./theme-provider"
 
@@ -12,7 +14,12 @@ type Props = {
 
 const Layout = ({ children }: Props) => (
   <ThemeProvider>
-    <Content>{children}</Content>
+    <div className="site-content">
+      <Logo />
+      <Header />
+      {children}
+      <Footer />
+    </div>
   </ThemeProvider>
 )
 

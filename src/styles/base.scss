@@ -45,6 +45,8 @@ a {
 body {
   background-color: var(--color-primary-bg);
   color: white;
+
+  transition: background-color ease-in-out 0.2s;
 }
 
 .site-content {
