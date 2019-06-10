@@ -1,12 +1,18 @@
 import React from "react"
 import useForm from "../hooks/use-form"
 
+const initialState = {
+  email: "",
+  message: "",
+  name: ""
+}
+
 const sendMsg = () => {
   alert("Submitted.")
 }
 
 const ContactForm = () => {
-  const { values, handleChange, handleSubmit } = useForm(sendMsg)
+  const { values, handleChange, handleSubmit } = useForm(initialState, sendMsg)
 
   return (
     <form
