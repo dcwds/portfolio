@@ -1,9 +1,10 @@
-@import "tap-target";
-
 header {
+  --font-size: var(--type-scale-tiny);
   --text-align: center;
 
+  align-items: center;
   display: flex;
+  font-size: var(--font-size);
   justify-content: space-between;
   text-align: var(--text-align);
 
@@ -12,14 +13,11 @@ header {
     flex-wrap: wrap;
 
     a {
-      @extend %tap-target;
-
       display: block;
     }
 
     li {
-      flex-grow: 1;
-      margin: 0 3vw 0 0;
+      margin: 0 4vw 0 0;
 
       &:last-of-type {
         margin-right: 0;
@@ -30,6 +28,7 @@ header {
 
 @media screen and (min-width: 600px) {
   header {
+    --font-size: auto;
     --text-align: left;
   }
 }
