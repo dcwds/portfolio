@@ -1,7 +1,15 @@
 .btn-theme {
   background: none;
   padding: 0;
+
+  .icon {
+    width: 32px;
+  }
 }
 .icon-dark {
-  fill: var(--color-accent);
+  fill: var(--color-primary);
+}
+
+.icon-light {
+  fill: hsl(41, 93%, 58%);
 }
