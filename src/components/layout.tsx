@@ -1,4 +1,4 @@
-import React, { ReactChild } from "react"
+import React, { ReactNode } from "react"
 import Footer from "./footer"
 import Header from "./header"
 import Logo from "./logo"
@@ -9,7 +9,7 @@ import "normalize.css"
 import "../styles/base.scss"
 
 type Props = {
-  children: ReactChild
+  children: ReactNode
 }
 
 const Layout = ({ children }: Props) => (
