@@ -9,9 +9,11 @@ const ThemeSelector = () => {
 
   return (
     <button className={`btn btn-theme btn-${theme}`} onClick={toggleTheme}>
-      {theme === "theme-light" && <MoonIcon className="icon icon-dark" />}
-
-      {theme === "theme-dark" && <SunIcon className="icon icon-light" />}
+      {theme === "theme-dark" ? (
+        <SunIcon className="icon icon-light" />
+      ) : (
+        <MoonIcon className="icon icon-dark" />
+      )}
     </button>
   )
 }
