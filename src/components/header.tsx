@@ -28,7 +28,6 @@ const Header = () => {
   return (
     <header className="navigation">
       <ul className="nav-items">{items}</ul>
-      <ThemeSelector />
     </header>
   )
 }
