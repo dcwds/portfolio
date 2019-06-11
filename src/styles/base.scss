@@ -4,11 +4,13 @@
 @import "./container";
 @import "./typography";
 
+@import "./components/button";
 @import "./components/content";
 @import "./components/logo";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/navigation";
+@import "./components/theme-select.scss";
 
 @import "./pages/index";
 @import "./pages/contact";

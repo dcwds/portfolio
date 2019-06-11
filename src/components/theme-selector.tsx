@@ -1,10 +1,16 @@
-import React from "react"
+import React, { useContext } from "react"
 import ThemeContext from "../contexts/theme-context"
 
-const ThemeSelector = () => (
-  <ThemeContext.Consumer>
-    {({ toggleTheme }) => <button onClick={toggleTheme}>Toggle Theme</button>}
-  </ThemeContext.Consumer>
-)
+import MoonIcon from "../assets/moon.inline.svg"
+
+const ThemeSelector = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext)
+
+  return (
+    <button className={`btn btn-theme btn-${theme}`} onClick={toggleTheme}>
+      <MoonIcon className="icon-dark" height="35" />
+    </button>
+  )
+}
 
 export default ThemeSelector

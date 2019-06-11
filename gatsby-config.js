@@ -12,6 +12,14 @@ module.exports = {
     {
       resolve: "gatsby-plugin-stylelint",
       options: { files: ["./src/**/**/*.{css,scss}"] }
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.inline\.svg$/
+        }
+      }
     }
   ]
 }

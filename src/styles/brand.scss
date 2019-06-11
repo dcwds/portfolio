@@ -1,6 +1,6 @@
 :root {
   /* @color-primary *****/
-  --color-primary-hue: 237;
+  --color-primary-hue: 240;
   --color-primary-saturation: 100%;
   --color-primary-lightness: 70%;
 
@@ -11,13 +11,15 @@
   );
 
   /* @color-primary-bg *****/
-  --color-primary-bg: hsl(var(--color-primary-hue), 25%, 16%);
+  --color-primary-bg: hsl(var(--color-primary-hue), 31%, 25%);
+
+  --color-accent: hsl(166, 69%, 53%);
 
   /* @color-primary-link *****/
-  --color-primary-link: hsl(var(--color-primary-hue), 20%, 60%);
+  --color-primary-link: hsl(var(--color-primary-hue), 57%, 71%);
 
   /* @color-primary-muted *****/
-  --color-primary-muted: hsl(var(--color-primary-hue), 20%, 60%);
+  --color-primary-muted: hsl(var(--color-primary-hue), 30%, 65%);
 }
 
 .theme-light {
