@@ -1,6 +1,6 @@
 import React from "react"
 import ContactForm from "../components/contact-form"
-import Layout from "../components/layout"
+import Layout from "../layout"
 
 import SEO from "../components/seo"
 import { SEOContactPage } from "../seo-config"

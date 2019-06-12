@@ -1,8 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { useContext } from "react"
+import React from "react"
 import Helmet from "react-helmet"
-
-import ThemeContext from "../contexts/theme-context"
 import { ISEOItem } from "../seo-config"
 
 const SEO = ({ title, description, lang = "en" }: ISEOItem) => {
@@ -23,15 +21,10 @@ const SEO = ({ title, description, lang = "en" }: ISEOItem) => {
     title: title || data.site.siteMetadata.defaultTitle
   }
 
-  const { theme } = useContext(ThemeContext)
-
   return (
     <Helmet
       htmlAttributes={{
         lang
-      }}
-      bodyAttributes={{
-        class: theme
       }}
       title={seo.title}
       titleTemplate={`%s · ${data.site.siteMetadata.defaultTitle}`}

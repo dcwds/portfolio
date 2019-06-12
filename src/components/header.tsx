@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import ThemeSelector from "./theme-selector"
+import ModeSelector from "./mode-selector"
 
 const NavItems: Array<{
   name: string
@@ -28,6 +28,7 @@ const Header = () => {
   return (
     <header className="navigation">
       <ul className="nav-items">{items}</ul>
+      <ModeSelector />
     </header>
   )
 }
