@@ -44,10 +44,9 @@ a {
   }
 }
 
-.site-wrapper {
+body {
   background-color: var(--color-primary-bg);
   color: white;
-  height: 100%;
 
   transition: background-color ease-in-out 0.2s;
 }

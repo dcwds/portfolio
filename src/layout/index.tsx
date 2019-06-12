@@ -1,5 +1,7 @@
 import React, { ReactNode } from "react"
-import LayoutChildren from "./children"
+import Footer from "../components/footer"
+import Header from "../components/header"
+import Logo from "../components/logo"
 
 import ModeProvider from "../components/mode-provider"
 
@@ -12,7 +14,12 @@ type Props = {
 
 const Layout = ({ children }: Props) => (
   <ModeProvider>
-    <LayoutChildren>{children}</LayoutChildren>
+    <div className="site-content">
+      <Logo />
+      <Header />
+      {children}
+      <Footer />
+    </div>
   </ModeProvider>
 )
 
