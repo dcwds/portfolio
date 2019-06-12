@@ -1,6 +1,9 @@
 %container {
   --max-width: 85vw;
 
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   margin: 0 auto;
   max-width: var(--max-width);
 }

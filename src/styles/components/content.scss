@@ -3,6 +3,7 @@
   --content-margin: 10vh 0 10vh 0;
 
   display: var(--content-display);
+  flex-grow: 1;
   margin: var(--content-margin);
 }
 

@@ -1,12 +1,17 @@
 header {
   --font-size: var(--type-scale-tiny);
   --text-align: center;
+  --item-gap-size: 4vw;
 
-  align-items: center;
   display: flex;
   font-size: var(--font-size);
   justify-content: space-between;
   text-align: var(--text-align);
+
+  .items {
+    align-items: center;
+    display: flex;
+  }
 
   .nav-items {
     display: flex;
@@ -17,11 +22,7 @@ header {
     }
 
     li {
-      margin: 0 4vw 0 0;
-
-      &:last-of-type {
-        margin-right: 0;
-      }
+      margin: 0 var(--item-gap-size) 0 0;
     }
   }
 }

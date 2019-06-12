@@ -8,10 +8,7 @@ const ModeSelector = () => {
   const { computedMode, toggleMode } = useContext(ModeContext)
 
   return (
-    <button
-      className={`btn btn-theme btn-${computedMode}`}
-      onClick={toggleMode}
-    >
+    <button className={`btn btn-mode btn-${computedMode}`} onClick={toggleMode}>
       {computedMode === "dark-mode" ? (
         <SunIcon className="icon icon-light" />
       ) : (

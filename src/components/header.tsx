@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import Logo from "./logo"
 
 import ModeSelector from "./mode-selector"
 
@@ -27,8 +28,11 @@ const Header = () => {
 
   return (
     <header className="navigation">
-      <ul className="nav-items">{items}</ul>
-      <ModeSelector />
+      <Logo />
+      <div className="items">
+        <ul className="nav-items">{items}</ul>
+        <ModeSelector />
+      </div>
     </header>
   )
 }
