@@ -8,23 +8,25 @@ import Availability from "../components/availability"
 import Emoji from "../components/emoji"
 import MailLink from "../components/mail-link"
 
+import styles from "../styles/pages/index.module.scss"
+
 const IndexPage = () => (
   <Layout>
     <SEO title={SEOIndexPage.title} description={SEOIndexPage.description} />
 
     <main className="content page-home">
-      <section className="hero">
-        <p className="line-hello">
+      <section className={styles.hero}>
+        <p className={styles.lineHello}>
           Hello! Hallo! <Emoji label="wave" symbol="🖐️" />
         </p>
-        <p className="line-name">I'm Dalton.</p>
-        <p className="line-about">
+        <p className={styles.lineName}>I'm Dalton.</p>
+        <p className={styles.lineAbout}>
           I'm a product designer &amp; front-end developer based in Virginia.
         </p>
 
-        <MailLink className="call-to-action" address="hello@dcwds.co" />
+        <MailLink className={styles.callToAction} address="hello@dcwds.co" />
 
-        <Availability available={true} />
+        <Availability className={styles.availability} available={true} />
       </section>
     </main>
   </Layout>

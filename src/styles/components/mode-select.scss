@@ -3,7 +3,7 @@
   padding: 0;
 
   .icon {
-    width: 32px;
+    width: 30px;
   }
 }
 .icon-dark {
@@ -11,5 +11,5 @@
 }
 
 .icon-light {
-  fill: hsl(41, 93%, 58%);
+  fill: var(--color-accent);
 }
