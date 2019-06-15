@@ -1,11 +1,9 @@
-import React, { ReactNode } from "react"
+import React, { Fragment, ReactNode } from "react"
 import Footer from "../components/footer"
 import Header from "../components/header"
 
 import ModeProvider from "../components/mode-provider"
-
-import "normalize.css"
-import "../styles/base.scss"
+import GlobalStyles from "../styles/globals"
 
 type Props = {
   children: ReactNode
@@ -13,11 +11,12 @@ type Props = {
 
 const Layout = ({ children }: Props) => (
   <ModeProvider>
-    <div className="site-content">
+    <Fragment>
+      <GlobalStyles />
       <Header />
       {children}
       <Footer />
-    </div>
+    </Fragment>
   </ModeProvider>
 )
 

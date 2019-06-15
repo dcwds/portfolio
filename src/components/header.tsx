@@ -17,20 +17,15 @@ const NavItems: Array<{
 const Header = () => {
   const items = NavItems.map(item => (
     <li key={item.name}>
-      <Link
-        to={item.route}
-        {...(item.hasActiveClass ? { activeClassName: "active" } : {})}
-      >
-        {item.name}
-      </Link>
+      <Link to={item.route}>{item.name}</Link>
     </li>
   ))
 
   return (
-    <header className="navigation">
+    <header>
       <Logo />
-      <div className="items">
-        <ul className="nav-items">{items}</ul>
+      <div>
+        <ul>{items}</ul>
         <ModeSelector />
       </div>
     </header>

@@ -8,7 +8,7 @@ const WorkPage = () => (
   <Layout>
     <SEO title={SEOWorkPage.title} description={SEOWorkPage.description} />
 
-    <main className="content page-work">
+    <main className="content">
       <section className="hero">
         <h1>Work</h1>
       </section>

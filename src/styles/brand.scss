@@ -1,18 +1,11 @@
 :root {
   /* @color-primary *****/
   --color-primary-hue: 218;
-  --color-primary-saturation: 100%;
-  --color-primary-lightness: 63%;
+  --color-primary: hsl(var(--color-primary-hue), 100%, 63%);
 
-  /* @color-accent-hue *****/
+  /* @color-accent *****/
   --color-accent-hue: 38;
   --color-accent: hsl(var(--color-accent-hue), 100%, 68%);
-
-  --color-primary: hsl(
-    var(--color-primary-hue),
-    var(--color-primary-saturation),
-    var(--color-primary-lightness)
-  );
 
   /* @color-primary-bg *****/
   --color-primary-bg: hsl(var(--color-primary-hue), 19%, 17%);

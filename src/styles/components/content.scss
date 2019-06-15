@@ -1,20 +1,22 @@
-.content {
-  --content-display: block;
-  --content-margin: 20vh 0 10vh 0;
-
-  display: var(--content-display);
-  flex-grow: 1;
-  margin: var(--content-margin);
-}
-
-.content a {
-  color: var(--color-accent);
-  font-weight: 600;
-}
-
-@media screen and (min-width: 600px) {
+:global {
   .content {
-    --content-display: grid;
-    --content-margin: 15vh 0 15vh 0;
+    --display: block;
+    --margin: 20vh 0 10vh 0;
+
+    display: var(--display);
+    flex-grow: 1;
+    margin: var(--margin);
+  }
+
+  .content a {
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+
+  @media screen and (min-width: 600px) {
+    .content {
+      --display: grid;
+      --margin: 15vh 0 15vh 0;
+    }
   }
 }

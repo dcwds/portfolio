@@ -6,13 +6,9 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sass",
     "gatsby-plugin-typescript",
     "gatsby-plugin-tslint",
-    {
-      resolve: "gatsby-plugin-stylelint",
-      options: { files: ["./src/**/**/*.{css,scss}"] }
-    },
+    "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

@@ -6,9 +6,6 @@
 
 @import "./components/button";
 @import "./components/content";
-@import "./components/logo";
-@import "./components/header";
-@import "./components/footer";
 @import "./components/navigation";
 @import "./components/mode-select";
 @import "./pages/contact";
@@ -41,31 +38,4 @@ body {
   color: white;
 
   transition: background-color ease-in-out 0.2s;
-}
-
-.site-content {
-  @extend %container;
-}
-
-// =REFACTOR
-header {
-  --header-margin: 3rem 0 0 0;
-
-  margin: var(--header-margin);
-}
-
-footer {
-  --footer-margin: 0 0 5vh 0;
-
-  margin: var(--footer-margin);
-}
-
-@media screen and (min-width: 600px) {
-  header {
-    --header-margin: 10vh 0 0 0;
-  }
-
-  footer {
-    --footer-margin: 0 0 10vh 0;
-  }
 }

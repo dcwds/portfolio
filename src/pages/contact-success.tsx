@@ -11,7 +11,7 @@ const ContactSuccessPage = () => (
       description={SEOContactSuccessPage.description}
     />
 
-    <main className="content page-contact-success">
+    <main className="content">
       <h1>Your message made it to my inbox.</h1>
       <p>Thanks for reaching out! I'll respond as soon as possible. :-)</p>
     </main>

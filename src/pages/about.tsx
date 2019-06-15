@@ -8,7 +8,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title={SEOAboutPage.title} description={SEOAboutPage.description} />
 
-    <main className="content page-about">
+    <main className="content">
       <h1>About</h1>
     </main>
   </Layout>

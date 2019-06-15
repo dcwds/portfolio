@@ -14,7 +14,7 @@ const ContactPage = () => (
       description={SEOContactPage.description}
     />
 
-    <main className="content page-contact">
+    <main className="content">
       <section className="hero">
         <h1>Let's talk!</h1>
         <p>

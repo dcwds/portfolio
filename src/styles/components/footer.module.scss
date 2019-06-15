@@ -1,0 +1,36 @@
+.footer {
+  --display: block;
+  --margin-bottom: 5vh;
+
+  composes: container from "../container.scss";
+
+  align-items: center;
+  color: var(--color-primary-muted);
+  display: var(--display);
+  justify-content: space-between;
+  margin-bottom: var(--margin-bottom);
+}
+
+.copyright {
+  margin: 0;
+}
+
+.nav-items {
+  composes: navItems from "./navigation.scss";
+
+  li {
+    display: inline-block;
+    margin-right: 2em;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    --display: flex;
+    --margin-bottom: 10vh;
+  }
+}

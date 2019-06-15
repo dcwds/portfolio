@@ -11,7 +11,7 @@ const ElsewhereItems: Array<{
 
 const Footer = () => {
   const elsewhereItems = ElsewhereItems.map(item => (
-    <li key={item.name} className={item.name.toLowerCase()}>
+    <li key={item.name}>
       <a href={item.link} rel="noopener noreferrer" target="_blank">
         {item.name}
       </a>
@@ -19,11 +19,9 @@ const Footer = () => {
   ))
 
   return (
-    <footer className="navigation">
-      <p className="copyright">
-        &copy; {new Date().getFullYear()} Dalton Woods.
-      </p>
-      <ul className="nav-items">{elsewhereItems}</ul>
+    <footer>
+      <p>&copy; {new Date().getFullYear()} Dalton Woods.</p>
+      <ul>{elsewhereItems}</ul>
     </footer>
   )
 }
