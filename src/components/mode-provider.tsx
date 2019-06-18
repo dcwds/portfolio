@@ -24,6 +24,12 @@ const ModeProvider = ({ children }: Props) => {
     })
   }
 
+  if (!mode.hasModeMounted) {
+    // Do not render until theme is mounted to prevent unwanted
+    // visual effects on load.
+    return <div />
+  }
+
   return (
     <ModeContext.Provider
       value={{ isDark: mode.isDark, theme: mode.theme, toggleMode }}

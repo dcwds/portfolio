@@ -46,6 +46,11 @@ const GlobalStyles = createGlobalStyle<{ theme: Theme }>`
     color: ${({ theme }) => theme.colors.text};
     font-family: "Circular", Helvetica, Arial, sans-serif;
   }
+
+  .theme-dark,
+  .theme-light {
+    background: ${({ theme }) => theme.colors.background};
+  }
 `
 
 export default GlobalStyles

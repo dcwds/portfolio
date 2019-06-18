@@ -1,4 +1,5 @@
 import React, { Fragment, ReactNode, useContext } from "react"
+import Helmet from "react-helmet"
 import Footer from "../components/footer"
 import Header from "../components/header"
 import GlobalStyles from "../styles/globals"
@@ -22,9 +23,14 @@ const LayoutBody = ({ children }: Props) => {
 
   return (
     <Fragment>
+      <Helmet
+        bodyAttributes={{
+          class: theme.className
+        }}
+      />
       <GlobalStyles theme={theme} />
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
     </Fragment>
   )

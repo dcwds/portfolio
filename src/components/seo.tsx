@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { useContext } from "react"
+import React from "react"
 import Helmet from "react-helmet"
-import ModeContext from "../contexts/mode-context"
 
 import { ISEOItem } from "../seo-config"
 
@@ -23,15 +22,10 @@ const SEO = ({ title, description, lang = "en" }: ISEOItem) => {
     title: title || data.site.siteMetadata.defaultTitle
   }
 
-  const { computedMode } = useContext(ModeContext)
-
   return (
     <Helmet
       htmlAttributes={{
         lang
-      }}
-      bodyAttributes={{
-        class: computedMode
       }}
       title={seo.title}
       titleTemplate={`%s · ${data.site.siteMetadata.defaultTitle}`}

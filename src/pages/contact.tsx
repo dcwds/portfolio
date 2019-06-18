@@ -14,18 +14,16 @@ const ContactPage = () => (
       description={SEOContactPage.description}
     />
 
-    <main className="content">
-      <section className="hero">
-        <h1>Let's talk!</h1>
-        <p>
-          You can also reach me at <MailLink address="iam@dcwds.co" />
-        </p>
-      </section>
+    <section className="hero">
+      <h1>Let's talk!</h1>
+      <p>
+        You can also reach me at <MailLink address="iam@dcwds.co" />
+      </p>
+    </section>
 
-      <section className="body">
-        <ContactForm />
-      </section>
-    </main>
+    <section className="body">
+      <ContactForm />
+    </section>
   </Layout>
 )
 

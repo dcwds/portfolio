@@ -7,6 +7,7 @@ import lightTheme from "../themes/theme-light"
 type State = {
   isDark: boolean
   theme: Theme
+  hasModeMounted: boolean
 }
 
 const isDarkMode = () => {
@@ -25,6 +26,7 @@ const isDarkMode = () => {
 
 const useDarkMode = () => {
   const [mode, setMode] = useState<State>({
+    hasModeMounted: false,
     isDark: true,
     theme: darkTheme
   })
@@ -32,6 +34,7 @@ const useDarkMode = () => {
   useEffect(() => {
     setMode({
       ...mode,
+      hasModeMounted: true,
       isDark: isDarkMode(),
       theme: isDarkMode() ? darkTheme : lightTheme
     })
