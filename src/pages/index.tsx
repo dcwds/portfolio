@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../layout"
+import styled from "styled-components"
 
 import SEO from "../components/seo"
 import { SEOIndexPage } from "../seo-config"

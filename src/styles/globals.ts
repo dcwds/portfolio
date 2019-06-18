@@ -1,8 +1,8 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle, Theme } from "styled-components"
 import { normalize } from "styled-normalize"
 import * as fonts from "../fonts"
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle<{ theme: Theme }>`
   ${normalize}
 
   @font-face {
@@ -42,6 +42,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    background: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.text};
     font-family: "Circular", Helvetica, Arial, sans-serif;
   }
 `

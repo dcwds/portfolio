@@ -1,13 +1,16 @@
 import React from "react"
+import { Theme } from "styled-components"
+import darkTheme from "../themes/theme-dark"
 
 export type ModeContextProps = {
-  dark: boolean
-  computedMode?: string
+  isDark: boolean
+  theme: Theme
   toggleMode?: () => void
 }
 
 export const ModeContext = React.createContext<ModeContextProps>({
-  dark: true
+  isDark: true,
+  theme: darkTheme
 })
 
 export default ModeContext

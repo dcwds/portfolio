@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react"
 
+import { Theme } from "styled-components"
+import darkTheme from "../themes/theme-dark"
+import lightTheme from "../themes/theme-light"
+
 type State = {
-  dark: boolean
-  hasModeMounted: boolean
+  isDark: boolean
+  theme: Theme
 }
 
-const getMode = () => {
+const isDarkMode = () => {
   const storedMode = localStorage.getItem("dark")
 
   // Check if a mode is being stored in local storage. If not,
@@ -21,12 +25,16 @@ const getMode = () => {
 
 const useDarkMode = () => {
   const [mode, setMode] = useState<State>({
-    dark: true,
-    hasModeMounted: false
+    isDark: true,
+    theme: darkTheme
   })
 
   useEffect(() => {
-    setMode({ ...mode, dark: getMode(), hasModeMounted: true })
+    setMode({
+      ...mode,
+      isDark: isDarkMode(),
+      theme: isDarkMode() ? darkTheme : lightTheme
+    })
   }, [])
 
   return { mode, setMode }

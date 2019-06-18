@@ -1,7 +1,10 @@
 import React from "react"
-import ModeContext from "../contexts/mode-context"
 
 import useDarkMode from "../hooks/use-dark-mode"
+import { ModeContext } from "../contexts/mode-context"
+
+import darkTheme from "../themes/theme-dark"
+import lightTheme from "../themes/theme-light"
 
 type Props = {
   children: React.ReactChild
@@ -10,23 +13,21 @@ type Props = {
 const ModeProvider = ({ children }: Props) => {
   const { mode, setMode } = useDarkMode()
 
-  const computedMode = mode.dark ? "dark-mode" : "light-mode"
-
   const toggleMode = () => {
-    const dark = !mode.dark
+    const isDark = !mode.isDark
 
-    localStorage.setItem("dark", JSON.stringify(dark))
-    setMode({ ...mode, dark })
-  }
-
-  if (!mode.hasModeMounted) {
-    // Do not render until theme is mounted to prevent unwanted
-    // visual effects on load.
-    return <div />
+    localStorage.setItem("dark", JSON.stringify(isDark))
+    setMode({
+      ...mode,
+      isDark,
+      theme: isDark ? darkTheme : lightTheme
+    })
   }
 
   return (
-    <ModeContext.Provider value={{ dark: mode.dark, computedMode, toggleMode }}>
+    <ModeContext.Provider
+      value={{ isDark: mode.isDark, theme: mode.theme, toggleMode }}
+    >
       {children}
     </ModeContext.Provider>
   )

@@ -1,9 +1,7 @@
-import React, { Fragment, ReactNode } from "react"
-import Footer from "../components/footer"
-import Header from "../components/header"
+import React, { ReactNode } from "react"
 
 import ModeProvider from "../components/mode-provider"
-import GlobalStyles from "../styles/globals"
+import LayoutBody from "./body"
 
 type Props = {
   children: ReactNode
@@ -11,12 +9,7 @@ type Props = {
 
 const Layout = ({ children }: Props) => (
   <ModeProvider>
-    <Fragment>
-      <GlobalStyles />
-      <Header />
-      {children}
-      <Footer />
-    </Fragment>
+    <LayoutBody>{children}</LayoutBody>
   </ModeProvider>
 )
 
