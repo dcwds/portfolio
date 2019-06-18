@@ -41,6 +41,28 @@ const GlobalStyles = createGlobalStyle<{ theme: Theme }>`
     font-weight: normal;
   }
 
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+
+  a {
+    color: ${({ theme }) => theme.colors.link.normal};
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: color 0.2s;
+
+    &:active {
+      color: ${({ theme }) => theme.colors.link.active};
+    }
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.link.hover};
+    }
+  }
+
   body {
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
