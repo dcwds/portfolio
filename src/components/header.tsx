@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import { containerStyles } from "../styles/helpers"
 import media from "../styles/media"
+import typeSizes from "../styles/typography"
+import { containerStyles } from "../styles/helpers"
 
 import { Link } from "gatsby"
 import Logo from "./logo"
@@ -14,6 +15,7 @@ const StyledHeader = styled.header`
 
   align-items: center;
   display: flex;
+  font-size: ${typeSizes.xs};
   justify-content: space-between;
   margin-top: var(--margin-top);
 

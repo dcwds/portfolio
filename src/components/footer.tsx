@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import media from "../styles/media"
+import typeSizes from "../styles/typography"
 import { containerStyles } from "../styles/helpers"
 
 const StyledFooter = styled.footer`
@@ -11,6 +12,7 @@ const StyledFooter = styled.footer`
 
   align-items: center;
   display: var(--display);
+  font-size: ${typeSizes.xs};
   justify-content: space-between;
   margin-bottom: var(--margin-bottom);
 

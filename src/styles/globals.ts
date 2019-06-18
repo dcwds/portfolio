@@ -63,10 +63,15 @@ const GlobalStyles = createGlobalStyle<{ theme: Theme }>`
     }
   }
 
+  html {
+    font-family: "Circular", Helvetica, Arial, sans-serif;
+    font-feature-settings: "calt", "liga", "clig", "kern";
+    font-size: 140%;
+  }
+
   body {
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
-    font-family: "Circular", Helvetica, Arial, sans-serif;
   }
 `
 
