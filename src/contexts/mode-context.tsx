@@ -1,16 +1,25 @@
 import React from "react"
-
 import useDarkMode from "../hooks/use-dark-mode"
-import { ModeContext } from "../contexts/mode-context"
-
+import { Theme } from "styled-components"
 import darkTheme from "../themes/theme-dark"
 import lightTheme from "../themes/theme-light"
 
-type Props = {
+export type ModeContextProps = {
+  isDark: boolean
+  theme: Theme
+  toggleMode?: () => void
+}
+
+export const ModeContext = React.createContext<ModeContextProps>({
+  isDark: true,
+  theme: darkTheme
+})
+
+type ModeProviderProps = {
   children: React.ReactChild
 }
 
-const ModeProvider = ({ children }: Props) => {
+const ModeProvider = ({ children }: ModeProviderProps) => {
   const { mode, setMode } = useDarkMode()
 
   const toggleMode = () => {
@@ -39,4 +48,6 @@ const ModeProvider = ({ children }: Props) => {
   )
 }
 
-export default ModeProvider
+export default ModeContext
+
+export { ModeProvider }

@@ -1,16 +1,25 @@
-import React, { ReactNode } from "react"
+import React, { Fragment, ReactNode, useContext } from "react"
+import Footer from "../components/footer"
+import Header from "../components/header"
+import GlobalStyles from "../styles/globals"
 
-import ModeProvider from "../components/mode-provider"
-import LayoutBody from "./body"
+import ModeContext from "../contexts/mode-context"
 
 type Props = {
   children: ReactNode
 }
 
-const Layout = ({ children }: Props) => (
-  <ModeProvider>
-    <LayoutBody>{children}</LayoutBody>
-  </ModeProvider>
-)
+const Layout = ({ children }: Props) => {
+  const { theme } = useContext(ModeContext)
+
+  return (
+    <Fragment>
+      <GlobalStyles theme={theme} />
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </Fragment>
+  )
+}
 
 export default Layout
