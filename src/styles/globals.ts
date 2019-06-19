@@ -73,7 +73,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.4;
 
     ${media.sm} {
-      --font-size: 145%;
+      --font-size: 150%;
     }
   }
 

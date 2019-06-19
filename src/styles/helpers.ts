@@ -13,4 +13,16 @@ const containerStyles = css`
   }
 `
 
-export { containerStyles }
+const navLinkStyles = css`
+  color: ${({ theme }) => theme.colors.navLink.normal};
+
+  &:active {
+    color: ${({ theme }) => theme.colors.navLink.active};
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.navLink.hover};
+  }
+`
+
+export { containerStyles, navLinkStyles }

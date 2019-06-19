@@ -35,7 +35,9 @@ const StyledBlurb = styled.p`
 `
 
 const StyledMailLink = styled(MailLink)`
+  display: inline-block;
   font-weight: 600;
+  margin-bottom: 0.3rem;
 `
 
 const IndexPage = () => (

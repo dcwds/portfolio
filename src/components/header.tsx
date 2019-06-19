@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import media from "../styles/media"
 import typeSizes from "../styles/typography"
-import { containerStyles } from "../styles/helpers"
+import { containerStyles, navLinkStyles } from "../styles/helpers"
 
 import { Link } from "gatsby"
 import Logo from "./logo"
@@ -42,6 +42,10 @@ const StyledNavItems = styled.ul`
   padding: 0;
 `
 
+const StyledNavItem = styled(Link)`
+  ${navLinkStyles}
+`
+
 const NavItems: Array<{
   name: string
   route: string
@@ -55,7 +59,7 @@ const NavItems: Array<{
 const Header = () => {
   const items = NavItems.map(item => (
     <li key={item.name}>
-      <Link to={item.route}>{item.name}</Link>
+      <StyledNavItem to={item.route}>{item.name}</StyledNavItem>
     </li>
   ))
 

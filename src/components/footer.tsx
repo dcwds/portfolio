@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import media from "../styles/media"
 import typeSizes from "../styles/typography"
-import { containerStyles } from "../styles/helpers"
+import { containerStyles, navLinkStyles } from "../styles/helpers"
 
 const StyledFooter = styled.footer`
   ${containerStyles}
@@ -36,6 +36,9 @@ const StyledNavItems = styled.ul`
   list-style-type: none;
   padding: 0;
 `
+const StyledNavItem = styled.a`
+  ${navLinkStyles}
+`
 
 const Copyright = styled.p`
   margin: 0;
@@ -53,9 +56,9 @@ const ElsewhereItems: Array<{
 const Footer = () => {
   const elsewhereItems = ElsewhereItems.map(item => (
     <li key={item.name}>
-      <a href={item.link} rel="noopener noreferrer" target="_blank">
+      <StyledNavItem href={item.link} rel="noopener noreferrer" target="_blank">
         {item.name}
-      </a>
+      </StyledNavItem>
     </li>
   ))
 
