@@ -1,15 +1,22 @@
 import React, { useContext } from "react"
 import { ModeContext } from "../contexts/mode-context"
-import MoonIcon from "../assets/icon-theme-dark.svg"
-import SunIcon from "../assets/icon-theme-light.svg"
+import styled from "styled-components"
+import DarkThemeIcon from "../assets/icon-theme-dark.svg"
+import LightThemeIcon from "../assets/icon-theme-light.svg"
+
+const StyledModeSelector = styled.button`
+  svg {
+    fill: ${({ theme }) => theme.colors.icon.switchTheme};
+  }
+`
 
 const ModeSelector = () => {
-  const { theme, toggleMode } = useContext(ModeContext)
+  const { isDark, toggleMode } = useContext(ModeContext)
 
   return (
-    <button className={`btn btn-mode`} onClick={toggleMode}>
-      Toggle Theme
-    </button>
+    <StyledModeSelector onClick={toggleMode}>
+      {isDark ? <LightThemeIcon width="32" /> : <DarkThemeIcon width="32" />}
+    </StyledModeSelector>
   )
 }
 

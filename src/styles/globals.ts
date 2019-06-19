@@ -78,6 +78,13 @@ const GlobalStyles = createGlobalStyle`
   p {
     margin: 0 0 1rem;
   }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
 `
 
 export default GlobalStyles

@@ -3,7 +3,9 @@ import { DefaultTheme } from "styled-components"
 const darkTheme: DefaultTheme = {
   colors: {
     background: "hsl(227, 22%, 17%)",
-    // callout: "hsl(35, 100%, 73%)",
+    icon: {
+      switchTheme: "hsl(38, 100%, 71%)"
+    },
     link: {
       active: "white",
       hover: "hsl(261, 100%, 100%%)",

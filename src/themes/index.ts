@@ -1,6 +1,9 @@
 type Theme = {
   colors: {
     background: string
+    icon: {
+      switchTheme: string
+    }
     link: {
       active: string
       hover: string
