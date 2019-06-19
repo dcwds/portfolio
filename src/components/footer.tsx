@@ -8,7 +8,7 @@ const StyledFooter = styled.footer`
   ${containerStyles}
 
   --display: block;
-  --margin-bottom: 5vh;
+  --margin-bottom: 3rem;
 
   align-items: center;
   display: var(--display);
@@ -26,7 +26,7 @@ const StyledFooter = styled.footer`
 
   ${media.sm} {
     --display: flex;
-    --margin-bottom: 10vh;
+    --margin-bottom: 5vh;
   }
 `
 
@@ -35,6 +35,10 @@ const StyledNavItems = styled.ul`
   margin: 0;
   list-style-type: none;
   padding: 0;
+`
+
+const Copyright = styled.p`
+  margin: 0;
 `
 
 const ElsewhereItems: Array<{
@@ -57,7 +61,7 @@ const Footer = () => {
 
   return (
     <StyledFooter>
-      <p>&copy; {new Date().getFullYear()} Dalton Woods.</p>
+      <Copyright>&copy; {new Date().getFullYear()} Dalton Woods.</Copyright>
       <StyledNavItems>{elsewhereItems}</StyledNavItems>
     </StyledFooter>
   )

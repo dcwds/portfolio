@@ -24,7 +24,7 @@ const StyledHeader = styled.header`
   }
 
   ${media.sm} {
-    --margin-top: 10vh;
+    --margin-top: 5vh;
   }
 `
 
