@@ -34,6 +34,10 @@ const StyledBlurb = styled.p`
   margin-bottom: 2rem;
 `
 
+const StyledMailLink = styled(MailLink)`
+  font-weight: 600;
+`
+
 const IndexPage = () => (
   <Layout>
     <SEO title={SEOIndexPage.title} description={SEOIndexPage.description} />
@@ -47,7 +51,7 @@ const IndexPage = () => (
         I'm a product designer &amp; front-end developer based in Virginia.
       </StyledBlurb>
 
-      <MailLink address="hello@dcwds.co" />
+      <StyledMailLink address="hello@dcwds.co" />
 
       <Availability available={true} />
     </StyledHero>

@@ -80,6 +80,8 @@ const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text.normal};
+
+    transition: background 0.4s, color 0.4s;
   }
 
   p {

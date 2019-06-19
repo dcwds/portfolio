@@ -9,6 +9,11 @@ type Theme = {
       hover: string
       normal: string
     }
+    navLink: {
+      active: string
+      hover: string
+      normal: string
+    }
     text: {
       normal: string
       callout: string
