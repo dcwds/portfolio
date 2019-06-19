@@ -9,7 +9,9 @@ type Props = {
 }
 
 const StyledAvailability = styled.p`
+  color: ${({ theme }) => theme.colors.text.normal};
   font-size: ${typeSizes.xs};
+  font-weight: normal;
 `
 
 const Availability = ({ available }: Props) => {

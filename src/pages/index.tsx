@@ -7,13 +7,20 @@ import Emoji from "../components/emoji"
 import MailLink from "../components/mail-link"
 
 import styled from "styled-components"
+import media from "../styles/media"
 import typeSizes from "../styles/typography"
 
 const StyledHero = styled.section`
+  --hero-font-size: 8vw;
+
   color: ${({ theme }) => theme.colors.text.callout};
-  font-size: ${typeSizes.lg};
-  font-weight: 400;
+  font-size: var(--hero-font-size);
+  font-weight: 500;
   max-width: 25rem;
+
+  ${media.sm} {
+    --hero-font-size: ${typeSizes.lg};
+  }
 `
 
 const IndexPage = () => (
