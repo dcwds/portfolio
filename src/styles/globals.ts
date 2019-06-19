@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 import { normalize } from "styled-normalize"
 import * as fonts from "../fonts"
+import media from "./media"
 
 const GlobalStyles = createGlobalStyle`
   ${normalize}
@@ -64,10 +65,16 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
+    --font-size: 130%;
+
     font-family: "Circular", Helvetica, Arial, sans-serif;
     font-feature-settings: "calt", "liga", "clig", "kern";
-    font-size: 145%;
+    font-size: var(--font-size);
     line-height: 1.4;
+
+    ${media.sm} {
+      --font-size: 145%;
+    }
   }
 
   body {

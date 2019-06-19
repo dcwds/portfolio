@@ -11,7 +11,7 @@ import media from "../styles/media"
 import typeSizes from "../styles/typography"
 
 const StyledHero = styled.section`
-  --hero-font-size: 8vw;
+  --hero-font-size: 7vw;
 
   color: ${({ theme }) => theme.colors.text.callout};
   font-size: var(--hero-font-size);
@@ -23,16 +23,29 @@ const StyledHero = styled.section`
   }
 `
 
+const StyledHello = styled.p`
+  margin-bottom: 0.3rem;
+`
+const StyledName = styled.p`
+  margin-bottom: 2rem;
+`
+
+const StyledBlurb = styled.p`
+  margin-bottom: 2rem;
+`
+
 const IndexPage = () => (
   <Layout>
     <SEO title={SEOIndexPage.title} description={SEOIndexPage.description} />
 
     <StyledHero>
-      <p>
+      <StyledHello>
         Hello! Hallo! <Emoji label="wave" symbol="🖐️" />
-      </p>
-      <p>I'm Dalton.</p>
-      <p>I'm a product designer &amp; front-end developer based in Virginia.</p>
+      </StyledHello>
+      <StyledName>I'm Dalton.</StyledName>
+      <StyledBlurb>
+        I'm a product designer &amp; front-end developer based in Virginia.
+      </StyledBlurb>
 
       <MailLink address="hello@dcwds.co" />
 
