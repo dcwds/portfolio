@@ -1,9 +1,8 @@
-import { Theme } from "styled-components"
+import { DefaultTheme } from "styled-components"
 
-const lightTheme: Theme = {
+const lightTheme: DefaultTheme = {
   colors: {
     background: "white",
-    callout: "black",
     link: {
       active: "black",
       hover: "darkBlue",
@@ -11,7 +10,10 @@ const lightTheme: Theme = {
     },
     primary: "white",
     secondary: "gray",
-    text: "black"
+    text: {
+      normal: "gray",
+      callout: "black"
+    }
   }
 }
 

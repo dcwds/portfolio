@@ -1,23 +1,29 @@
 import React from "react"
-
 import Emoji from "../components/emoji"
+
+import styled from "styled-components"
+import typeSizes from "../styles/typography"
 
 type Props = {
   available: boolean
 }
 
+const StyledAvailability = styled.p`
+  font-size: ${typeSizes.xs};
+`
+
 const Availability = ({ available }: Props) => {
   if (!available) {
     return (
-      <p>
+      <StyledAvailability>
         I am not accepting new work. <Emoji symbol="🙁" label="frownyFace" />
-      </p>
+      </StyledAvailability>
     )
   } else {
     return (
-      <p>
+      <StyledAvailability>
         I am accepting new work. <Emoji symbol="😊" label="happyFace" />
-      </p>
+      </StyledAvailability>
     )
   }
 }

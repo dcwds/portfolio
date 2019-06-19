@@ -1,8 +1,8 @@
-import { createGlobalStyle, Theme } from "styled-components"
+import { createGlobalStyle } from "styled-components"
 import { normalize } from "styled-normalize"
 import * as fonts from "../fonts"
 
-const GlobalStyles = createGlobalStyle<{ theme: Theme }>`
+const GlobalStyles = createGlobalStyle`
   ${normalize}
 
   @font-face {
@@ -66,12 +66,17 @@ const GlobalStyles = createGlobalStyle<{ theme: Theme }>`
   html {
     font-family: "Circular", Helvetica, Arial, sans-serif;
     font-feature-settings: "calt", "liga", "clig", "kern";
-    font-size: 140%;
+    font-size: 145%;
+    line-height: 1.4;
   }
 
   body {
     background: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.text.normal};
+  }
+
+  p {
+    margin: 0 0 1rem;
   }
 `
 

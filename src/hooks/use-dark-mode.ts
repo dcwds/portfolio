@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 
-import { Theme } from "styled-components"
+import { DefaultTheme } from "styled-components"
 import darkTheme from "../themes/theme-dark"
 import lightTheme from "../themes/theme-light"
 
 type State = {
   isDark: boolean
-  theme: Theme
+  theme: DefaultTheme
   hasModeMounted: boolean
 }
 
