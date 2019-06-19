@@ -1,5 +1,4 @@
 import { DefaultTheme } from "styled-components"
-import DarkThemeIcon from "../assets/icon-theme-dark.svg"
 
 const lightTheme: DefaultTheme = {
   colors: {
