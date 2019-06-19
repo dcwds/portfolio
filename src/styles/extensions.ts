@@ -1,7 +1,7 @@
 import media from "./media"
 import { css } from "styled-components"
 
-const containerStyles = css`
+const containerStyle = css`
   --max-width: 90vw;
 
   margin-left: auto;
@@ -13,7 +13,7 @@ const containerStyles = css`
   }
 `
 
-const navLinkStyles = css`
+const navLinkStyle = css`
   color: ${({ theme }) => theme.colors.navLink.normal};
 
   &:active {
@@ -25,4 +25,4 @@ const navLinkStyles = css`
   }
 `
 
-export { containerStyles, navLinkStyles }
+export { containerStyle, navLinkStyle }

@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import media from "../styles/media"
 import typeSizes from "../styles/typography"
-import { containerStyles, navLinkStyles } from "../styles/helpers"
+import { containerStyle, navLinkStyle } from "../styles/extensions"
 
 const StyledFooter = styled.footer`
-  ${containerStyles}
+  ${containerStyle}
 
   --display: block;
   --margin-bottom: 3rem;
@@ -37,7 +37,7 @@ const StyledNavItems = styled.ul`
   padding: 0;
 `
 const StyledNavItem = styled.a`
-  ${navLinkStyles}
+  ${navLinkStyle}
 `
 
 const Copyright = styled.p`

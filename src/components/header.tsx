@@ -2,14 +2,14 @@ import React from "react"
 import styled from "styled-components"
 import media from "../styles/media"
 import typeSizes from "../styles/typography"
-import { containerStyles, navLinkStyles } from "../styles/helpers"
+import { containerStyle, navLinkStyle } from "../styles/extensions"
 
 import { Link } from "gatsby"
 import Logo from "./logo"
 import ModeSelector from "./mode-selector"
 
 const StyledHeader = styled.header`
-  ${containerStyles}
+  ${containerStyle}
 
   --margin-top: 3rem;
 
@@ -43,7 +43,7 @@ const StyledNavItems = styled.ul`
 `
 
 const StyledNavItem = styled(Link)`
-  ${navLinkStyles}
+  ${navLinkStyle}
 `
 
 const NavItems: Array<{

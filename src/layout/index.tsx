@@ -5,10 +5,10 @@ import Header from "../components/header"
 import styled from "styled-components"
 import media from "../styles/media"
 import GlobalStyles from "../styles/globals"
-import { containerStyles } from "../styles/helpers"
+import { containerStyle } from "../styles/extensions"
 
 const StyledContent = styled.main`
-  ${containerStyles}
+  ${containerStyle}
 
   --margin: 10vh auto;
 
