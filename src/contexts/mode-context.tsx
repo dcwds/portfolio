@@ -6,11 +6,12 @@ import lightTheme from "../themes/theme-light"
 
 export type ModeContextProps = {
   isDark: boolean
-  toggleMode?: () => void
+  toggleMode: () => void
 }
 
 export const ModeContext = React.createContext<ModeContextProps>({
-  isDark: true
+  isDark: true,
+  toggleMode: () => null
 })
 
 type ModeProviderProps = {

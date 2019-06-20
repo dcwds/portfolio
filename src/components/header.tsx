@@ -6,7 +6,7 @@ import { containerStyle, navLinkStyle } from "../styles/extensions"
 
 import { Link } from "gatsby"
 import Logo from "./logo"
-import ModeSelector from "./mode-selector"
+import ModeToggle from "./mode-toggle"
 
 const StyledHeader = styled.header`
   ${containerStyle}
@@ -68,7 +68,7 @@ const Header = () => {
       <Logo />
       <StyledItems>
         <StyledNavItems>{items}</StyledNavItems>
-        <ModeSelector />
+        <ModeToggle />
       </StyledItems>
     </StyledHeader>
   )

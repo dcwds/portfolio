@@ -65,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    --font-size: 130%;
+    --font-size: 150%;
 
     font-family: "Circular", Helvetica, Arial, sans-serif;
     font-feature-settings: "calt", "liga", "clig", "kern";
@@ -73,7 +73,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.4;
 
     ${media.sm} {
-      --font-size: 150%;
+      --font-size: 175%;
     }
   }
 
