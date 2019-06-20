@@ -3,32 +3,23 @@ import Switch from "react-switch"
 import useToggle from "../hooks/use-toggle"
 import ModeContext from "../contexts/mode-context"
 
-import styled from "styled-components"
-import DarkThemeIcon from "../assets/icon-theme-dark.svg"
-import LightThemeIcon from "../assets/icon-theme-light.svg"
+import styled, { css } from "styled-components"
+import DarkIcon from "../assets/icon-theme-dark.svg"
+import LightIcon from "../assets/icon-theme-light.svg"
 
-const StyledDarkIcon = styled.div`
-  position: absolute;
-  left: 9px;
-  top: 4px;
-`
-const StyledLightIcon = styled.div`
-  position: absolute;
-  right: 8px;
-  top: 4px;
+const iconStyle = css`
+  fill: white;
+  height: 18px;
 `
 
-const DarkIcon = () => (
-  <StyledDarkIcon>
-    <DarkThemeIcon height="16" fill="white" />
-  </StyledDarkIcon>
-)
-
-const LightIcon = () => (
-  <StyledLightIcon>
-    <LightThemeIcon height="16" fill="white" />
-  </StyledLightIcon>
-)
+const StyledDarkIcon = styled(DarkIcon)`
+  ${iconStyle}
+  margin: 5px 0 0 7px;
+`
+const StyledLightIcon = styled(LightIcon)`
+  ${iconStyle}
+  margin: 4px 0 0 5px;
+`
 
 const ModeToggle = () => {
   const { isDark, toggleMode } = useContext(ModeContext)
@@ -39,8 +30,8 @@ const ModeToggle = () => {
       arial-label="Toggle light and dark mode."
       onChange={handleChange}
       checked={toggle.checked}
-      checkedIcon={<DarkIcon />}
-      uncheckedIcon={<LightIcon />}
+      checkedIcon={<StyledDarkIcon />}
+      uncheckedIcon={<StyledLightIcon />}
       onColor="#808aff"
       offColor="#a3a3a3"
     />

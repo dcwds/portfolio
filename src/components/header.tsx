@@ -11,31 +11,46 @@ import ModeToggle from "./mode-toggle"
 const StyledHeader = styled.header`
   ${containerStyle}
 
-  --margin-top: 3rem;
+  --display: block;
+  --item-gap: 10vw;
+  --margin-top: 1.5rem;
 
   align-items: center;
-  display: flex;
+  display: var(--display);
   font-size: ${typeSizes.xs};
   justify-content: space-between;
   margin-top: var(--margin-top);
 
   li {
-    margin-right: 4vw;
+    margin-right: var(--item-gap);
   }
 
   ${media.sm} {
+    --display: flex;
+    --item-gap: 4vw;
     --margin-top: 5vh;
+  }
+`
+
+const StyledLogo = styled(Logo)`
+  --margin-bottom: 0.667rem;
+
+  display: inline-block;
+  margin-bottom: var(--margin-bottom);
+
+  ${media.sm} {
+    --margin-bottom: 0;
   }
 `
 
 const StyledItems = styled.div`
   align-items: center;
   display: flex;
+  justify-content: space-between;
 `
 
 const StyledNavItems = styled.ul`
   display: flex;
-  flex-wrap: wrap;
 
   list-style-type: none;
   margin: 0;
@@ -65,7 +80,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <Logo />
+      <StyledLogo />
       <StyledItems>
         <StyledNavItems>{items}</StyledNavItems>
         <ModeToggle />
