@@ -4,14 +4,14 @@ type State = {
   checked: boolean
 }
 
-const useToggle = (toggleMode: VoidFunction) => {
+const useToggle = (isDark: boolean, callback: VoidFunction) => {
   const [toggle, setToggle] = useState<State>({
-    checked: false
+    checked: isDark
   })
 
   const handleChange = (checked: boolean) => {
     setToggle({ ...toggle, checked })
-    toggleMode()
+    callback()
   }
 
   return {
