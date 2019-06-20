@@ -15,7 +15,7 @@ const StyledContent = styled.main`
   margin: var(--margin);
 
   ${media.sm} {
-    --margin: 25vh auto 15vh auto;
+    --margin: 20vh auto 15vh auto;
   }
 `
 
