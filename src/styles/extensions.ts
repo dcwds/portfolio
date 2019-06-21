@@ -9,7 +9,11 @@ const containerStyle = css`
   width: var(--max-width);
 
   ${media.sm} {
-    --max-width: 55vw;
+    --max-width: 70vw;
+  }
+
+  ${media.lg} {
+    --max-width: 45vw;
   }
 `
 

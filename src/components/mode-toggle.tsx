@@ -9,16 +9,17 @@ import LightIcon from "../assets/icon-theme-light.svg"
 
 const iconStyle = css`
   fill: white;
-  height: 18px;
 `
 
 const StyledDarkIcon = styled(DarkIcon)`
   ${iconStyle}
+  height: 18px;
   margin: 5px 0 0 7px;
 `
 const StyledLightIcon = styled(LightIcon)`
   ${iconStyle}
-  margin: 4px 0 0 5px;
+  height: 20px;
+  margin: 4px 0 0 3px;
 `
 
 const ModeToggle = () => {
@@ -33,7 +34,7 @@ const ModeToggle = () => {
       checkedIcon={<StyledDarkIcon />}
       uncheckedIcon={<StyledLightIcon />}
       onColor="#808aff"
-      offColor="#a3a3a3"
+      offColor="#8588ad"
     />
   )
 }
