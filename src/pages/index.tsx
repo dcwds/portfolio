@@ -19,7 +19,7 @@ const StyledHero = styled.section`
   max-width: 25rem;
 
   ${media.sm} {
-    --hero-font-size: ${typeSizes.md};
+    --hero-font-size: ${typeSizes.xl};
   }
 `
 

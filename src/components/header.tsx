@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
 
   align-items: center;
   display: var(--display);
-  font-size: ${typeSizes.xs};
+  font-size: ${typeSizes.sm};
   justify-content: space-between;
   margin-top: var(--margin-top);
 

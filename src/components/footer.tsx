@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
 
   align-items: center;
   display: var(--display);
-  font-size: ${typeSizes.xs};
+  font-size: ${typeSizes.sm};
   justify-content: space-between;
   margin-bottom: var(--margin-bottom);
 

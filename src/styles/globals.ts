@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components"
 import { normalize } from "styled-normalize"
 import * as fonts from "../fonts"
 import media from "./media"
+import typeSizes from "./typography"
 
 const GlobalStyles = createGlobalStyle`
   ${normalize}
@@ -65,7 +66,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    --font-size: 150%;
+    --font-size: 120%;
 
     font-family: "Circular", Helvetica, Arial, sans-serif;
     font-feature-settings: "calt", "liga", "clig", "kern";
@@ -73,7 +74,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.4;
 
     ${media.sm} {
-      --font-size: 175%;
+      --font-size: 140%;
     }
   }
 
@@ -93,6 +94,18 @@ const GlobalStyles = createGlobalStyle`
     border: none;
     cursor: pointer;
     outline: none;
+  }
+
+  h1 {
+    font-size: ${typeSizes.xxl};
+  }
+
+  h2 {
+    font-size: ${typeSizes.xl};
+  }
+
+  h3 {
+    font-size: ${typeSizes.lg};
   }
 `
 
