@@ -22,5 +22,5 @@ type Theme = {
     secondary: string
   }
 }
-
+badThingie
 export default Theme
