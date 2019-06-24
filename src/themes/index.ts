@@ -22,5 +22,5 @@ type Theme = {
     secondary: string
   }
 }
-badThingieaa
+
 export default Theme
