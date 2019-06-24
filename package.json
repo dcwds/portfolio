@@ -22,7 +22,7 @@
     "linters": {
       "{.ts,.tsx}": [
         "prettier --write",
-        "tslint --fix",
+        "yarn lint-ts",
         "git add"
       ]
     }
