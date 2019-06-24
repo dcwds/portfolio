@@ -20,9 +20,9 @@
   },
   "lint-staged": {
     "linters": {
-      "{.ts,.tsx}": [
+      "*.{ts,.tsx}": [
         "prettier --write",
-        "yarn lint-ts",
+        "tslint --fix",
         "git add"
       ]
     }
