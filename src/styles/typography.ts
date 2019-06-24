@@ -1,3 +1,4 @@
+// modularscale - base 1em; ratio: 1.25
 const typeSizes = {
   xs: "0.64rem",
   sm: "0.8rem",

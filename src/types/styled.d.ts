@@ -1,4 +1,3 @@
-import "styled-components"
 import { DefaultTheme } from "styled-components"
 import Theme from "../themes"
 

@@ -9,9 +9,22 @@
     "dev": "gatsby develop -H 0.0.0.0 -p 8000",
     "serve": "gatsby serve",
     "format": "prettier --write src/**/*.{ts,tsx}",
-    "lint": "tslint --project .",
+    "lint-ts": "tslint -c tslint.json 'src/**/*/*.{ts,tsx}'",
     "type-check": "tslint-config-prettier-check ./tslint.json",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "{.ts,.tsx}": [
+        "prettier --write && tslint --fix",
+        "git add"
+      ]
+    }
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -35,6 +48,8 @@
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.8",
     "@types/styled-components": "^4.1.16",
+    "husky": "^2.5.0",
+    "lint-staged": "^8.2.1",
     "prettier": "^1.17.0",
     "tslint": "^5.17.0",
     "tslint-config-prettier": "^1.18.0",
