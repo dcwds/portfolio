@@ -1,6 +1,5 @@
 import React from "react"
 import ContactForm from "../components/contact-form"
-import Layout from "../layout"
 
 import SEO from "../components/seo"
 import { SEOContactPage } from "../seo-config"
@@ -8,7 +7,7 @@ import { SEOContactPage } from "../seo-config"
 import MailLink from "../components/mail-link"
 
 const ContactPage = () => (
-  <Layout>
+  <>
     <SEO
       title={SEOContactPage.title}
       description={SEOContactPage.description}
@@ -24,7 +23,7 @@ const ContactPage = () => (
     <section className="body">
       <ContactForm />
     </section>
-  </Layout>
+  </>
 )
 
 export default ContactPage

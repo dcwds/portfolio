@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../layout"
 import SEO from "../components/seo"
 import { SEOIndexPage } from "../seo-config"
 import Availability from "../components/availability"
@@ -41,7 +40,7 @@ const StyledMailLink = styled(MailLink)`
 `
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title={SEOIndexPage.title} description={SEOIndexPage.description} />
 
     <StyledHero>
@@ -57,7 +56,7 @@ const IndexPage = () => (
 
       <Availability available={true} />
     </StyledHero>
-  </Layout>
+  </>
 )
 
 export default IndexPage

@@ -1,12 +1,11 @@
 import React from "react"
-import Layout from "../layout"
 
 import ExternalLink from "../components/external-link"
 import SEO from "../components/seo"
 import { SEOAboutPage } from "../seo-config"
 
 const AboutPage = () => (
-  <Layout>
+  <>
     <SEO title={SEOAboutPage.title} description={SEOAboutPage.description} />
 
     <h1>About</h1>
@@ -20,7 +19,7 @@ const AboutPage = () => (
         <ExternalLink href="https://www.gatsbyjs.org/">Gatsby</ExternalLink>.
       </p>
     </section>
-  </Layout>
+  </>
 )
 
 export default AboutPage
