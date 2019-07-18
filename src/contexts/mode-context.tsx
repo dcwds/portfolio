@@ -32,11 +32,13 @@ const ModeProvider = ({ children }: ModeProviderProps) => {
     })
   }
 
+  /*
   if (!mode.hasModeMounted) {
     // Do not render until theme is mounted to prevent unwanted
     // visual effects on load.
     return <div />
   }
+  */
 
   // REFACTOR:
   // It's pretty ugly to have styled-components' `ThemeProvider` as a
