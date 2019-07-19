@@ -32,24 +32,18 @@ const ModeProvider = ({ children }: ModeProviderProps) => {
     })
   }
 
-  /*
   if (!mode.hasModeMounted) {
     // Do not render until theme is mounted to prevent unwanted
     // visual effects on load.
     return <div />
   }
-  */
 
-  // REFACTOR:
-  // It's pretty ugly to have styled-components' `ThemeProvider` as a
-  // child of the `ModeProvider` but to have the `theme` prop properly passed down
-  // to the children, this is required.
-
-  // I'll be looking for a more elegant solution at a later date.
   return (
-    <ModeContext.Provider value={{ isDark: mode.isDark, toggleMode }}>
-      <ThemeProvider theme={mode.theme}>{children}</ThemeProvider>
-    </ModeContext.Provider>
+    <ThemeProvider theme={mode.theme}>
+      <ModeContext.Provider value={{ isDark: mode.isDark, toggleMode }}>
+        {children}
+      </ModeContext.Provider>
+    </ThemeProvider>
   )
 }
 

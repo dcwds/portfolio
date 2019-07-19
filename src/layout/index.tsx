@@ -4,7 +4,6 @@ import Header from "../components/header"
 
 import styled from "styled-components"
 import media from "../styles/media"
-import GlobalStyles from "../styles/globals"
 import { containerStyle } from "../styles/extensions"
 
 const StyledContent = styled.main`
@@ -25,7 +24,6 @@ type Props = {
 
 const Layout = ({ children }: Props) => (
   <Fragment>
-    <GlobalStyles />
     <Header />
     <StyledContent>{children}</StyledContent>
     <Footer />
